@@ -36,6 +36,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "tengoku_infused_diamond"
+    },
+    {
+      "name": "TengokuDiamonds",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_diamonds"
     }
   ],
   "variable_elements": [],
