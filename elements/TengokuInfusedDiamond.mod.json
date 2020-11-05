@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "assets_minecraft_textures_items_diamond_legendary_png",
+    "texture": "tengoku_diamond",
     "customModelName": "Normal",
     "name": "Tengoku Infused Diamond",
     "creativeTab": {
