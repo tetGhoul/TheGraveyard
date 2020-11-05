@@ -9,13 +9,23 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "tengoku_ingot"
+    },
+    {
+      "name": "HantaiNoTengoku",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hantai_no_tengoku"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.hantai_no_tengoku.tengoku_ingot": "Tengoku Ingot"
+      "item.hantai_no_tengoku.tengoku_ingot": "Tengoku Ingot",
+      "itemGroup.tabhantai_no_tengoku": "Hantai No Tengoku"
     }
   },
   "workspaceSettings": {

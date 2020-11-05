@@ -1,0 +1,11 @@
+{
+  "_fv": 10,
+  "_type": "tab",
+  "definition": {
+    "name": "Hantai No Tengoku",
+    "icon": {
+      "value": "CUSTOM:TengokuIngot"
+    },
+    "showSearch": false
+  }
+}
