@@ -1,16 +1,6 @@
 {
   "id_map": {},
-  "mod_elements": [
-    {
-      "name": "CreativeItem",
-      "type": "code",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "creative_item"
-    }
-  ],
+  "mod_elements": [],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
