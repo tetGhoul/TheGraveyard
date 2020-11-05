@@ -114,7 +114,7 @@ public class TengokuCoreBlock extends HantaiNoTengokuModElements.ModElement {
 				if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 2)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(1, 0, 0, 16))));
+			}), block.getDefaultState(), 4)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(2, 5, 5, 20))));
 		}
 	}
 }
