@@ -1,0 +1,30 @@
+{
+  "_fv": 10,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "assets_minecraft_textures_items_diamond_legendary_png",
+    "customModelName": "Normal",
+    "name": "Tengoku Infused Diamond",
+    "creativeTab": {
+      "value": "CUSTOM:HantaiNoTengoku"
+    },
+    "stackSize": 16,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Heaven INfused Diamond"
+    ],
+    "hasGlow": true,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 16
+  }
+}

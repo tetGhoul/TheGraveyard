@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "hantai_no_tengoku:items/assets_minecraft_textures_items_diamond_legendary_png"
+  }
+}

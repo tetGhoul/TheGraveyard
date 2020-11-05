@@ -27,6 +27,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "tengoku_core"
+    },
+    {
+      "name": "TengokuInfusedDiamond",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_infused_diamond"
     }
   ],
   "variable_elements": [],
@@ -35,6 +44,7 @@
     "en_us": {
       "item.hantai_no_tengoku.tengoku_ingot": "Tengoku Ingot",
       "itemGroup.tabhantai_no_tengoku": "Hantai No Tengoku",
+      "item.hantai_no_tengoku.tengoku_infused_diamond": "Tengoku Infused Diamond",
       "block.hantai_no_tengoku.tengoku_core": "Tengoku Core"
     }
   },
