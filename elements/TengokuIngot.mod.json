@@ -16,8 +16,8 @@
     "damageCount": 0,
     "destroyAnyBlock": false,
     "stayInGridWhenCrafting": true,
-    "damageOnCrafting": false,
-    "enableMeleeDamage": false,
+    "damageOnCrafting": true,
+    "enableMeleeDamage": true,
     "damageVsEntity": 0.0,
     "specialInfo": [
       "core from heaven"
