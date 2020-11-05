@@ -18,6 +18,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "hantai_no_tengoku"
+    },
+    {
+      "name": "TengokuCore",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_core"
     }
   ],
   "variable_elements": [],
@@ -25,7 +34,8 @@
   "language_map": {
     "en_us": {
       "item.hantai_no_tengoku.tengoku_ingot": "Tengoku Ingot",
-      "itemGroup.tabhantai_no_tengoku": "Hantai No Tengoku"
+      "itemGroup.tabhantai_no_tengoku": "Hantai No Tengoku",
+      "block.hantai_no_tengoku.tengoku_core": "Tengoku Core"
     }
   },
   "workspaceSettings": {

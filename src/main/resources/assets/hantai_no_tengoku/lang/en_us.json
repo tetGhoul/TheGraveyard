@@ -1,4 +1,5 @@
 {
   "item.hantai_no_tengoku.tengoku_ingot": "Tengoku Ingot",
-  "itemGroup.tabhantai_no_tengoku": "Hantai No Tengoku"
+  "itemGroup.tabhantai_no_tengoku": "Hantai No Tengoku",
+  "block.hantai_no_tengoku.tengoku_core": "Tengoku Core"
 }

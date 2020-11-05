@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "hantai_no_tengoku:blocks/tengokuore",
+    "up": "hantai_no_tengoku:blocks/tengokuore",
+    "north": "hantai_no_tengoku:blocks/tengokuore",
+    "east": "hantai_no_tengoku:blocks/tengokuore",
+    "south": "hantai_no_tengoku:blocks/tengokuore",
+    "west": "hantai_no_tengoku:blocks/tengokuore",
+    "particle": "hantai_no_tengoku:blocks/tengokuore"
+  }
+}
