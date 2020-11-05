@@ -45,6 +45,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "tengoku_diamonds"
+    },
+    {
+      "name": "Souls",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "souls"
     }
   ],
   "variable_elements": [],
@@ -54,6 +63,7 @@
       "item.hantai_no_tengoku.tengoku_ingot": "Tengoku Core",
       "itemGroup.tabhantai_no_tengoku": "Hantai No Tengoku",
       "item.hantai_no_tengoku.tengoku_infused_diamond": "Tengoku Infused Diamond",
+      "item.hantai_no_tengoku.souls": "Souls",
       "block.hantai_no_tengoku.tengoku_core": "Tengoku Stone"
     }
   },
