@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "hantai_no_tengoku:block/limbo_portal_ew"
+    },
+    "axis=x": {
+      "model": "hantai_no_tengoku:block/limbo_portal_ns"
+    }
+  }
+}
