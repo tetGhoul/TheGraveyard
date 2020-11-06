@@ -12,7 +12,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
@@ -42,17 +41,12 @@ public class VoidSoilBlock extends HantaiNoTengokuModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.GROUND).hardnessAndResistance(3.5f, 10f).lightValue(0).harvestLevel(1)
-					.harvestTool(ToolType.SHOVEL).slipperiness(0.1f));
+					.harvestTool(ToolType.SHOVEL));
 			setRegistryName("void_soil");
 		}
 
 		@Override
 		public boolean isBeaconBase(BlockState state, IWorldReader world, BlockPos pos, BlockPos beacon) {
-			return true;
-		}
-
-		@Override
-		public boolean isReplaceable(BlockState state, BlockItemUseContext context) {
 			return true;
 		}
 

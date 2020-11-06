@@ -12,9 +12,9 @@
     "portalSound": {
       "value": "block.portal.ambient"
     },
-    "igniterName": "Limbo Portal Igniter",
+    "igniterName": "Portal Ignite",
     "igniterTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:HantaiNoTengoku"
     },
     "texture": "tengokuessence",
     "portalTexture": "tengokuinfusedobsidian",
@@ -36,7 +36,7 @@
       "falpha": 0.0
     },
     "canRespawnHere": false,
-    "hasFog": true,
+    "hasFog": false,
     "hasWeather": true,
     "isDark": false,
     "doesWaterVaporize": false,
