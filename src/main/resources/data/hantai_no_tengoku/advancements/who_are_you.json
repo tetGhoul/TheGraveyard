@@ -1,0 +1,29 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "hantai_no_tengoku:void_soil"
+    },
+    "title": {
+      "translate": "advancements.who_are_you.title"
+    },
+    "description": {
+      "translate": "advancements.who_are_you.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "who_are_you": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "hantai_no_tengoku:limbo"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 2
+  }
+}

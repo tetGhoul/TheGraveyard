@@ -1,0 +1,29 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "hantai_no_tengoku:tengoku_infused_diamond"
+    },
+    "title": {
+      "translate": "advancements.goodbye.title"
+    },
+    "description": {
+      "translate": "advancements.goodbye.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "goodbye": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "hantai_no_tengoku:limbo"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  }
+}

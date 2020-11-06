@@ -749,20 +749,14 @@ public class LimboDimension extends HantaiNoTengokuModElements.ModElement {
 		if (event.getFrom() == type) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
+				$_dependencies.put("entity", entity);
 				LimboPlayerLeavesDimensionProcedure.executeProcedure($_dependencies);
 			}
 		}
 		if (event.getTo() == type) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
+				$_dependencies.put("entity", entity);
 				LimboPlayerEntersDimensionProcedure.executeProcedure($_dependencies);
 			}
 		}
