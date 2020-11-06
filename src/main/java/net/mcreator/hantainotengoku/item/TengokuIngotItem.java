@@ -32,7 +32,7 @@ public class TengokuIngotItem extends HantaiNoTengokuModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(HantaiNoTengokuItemGroup.tab).maxStackSize(1));
+			super(new Item.Properties().group(HantaiNoTengokuItemGroup.tab).maxDamage(8));
 			setRegistryName("tengoku_ingot");
 		}
 
@@ -43,7 +43,12 @@ public class TengokuIngotItem extends HantaiNoTengokuModElements.ModElement {
 
 		@Override
 		public ItemStack getContainerItem(ItemStack itemstack) {
-			return new ItemStack(this);
+			ItemStack retval = new ItemStack(this);
+			retval.setDamage(itemstack.getDamage() + 1);
+			if (retval.getDamage() >= retval.getMaxDamage()) {
+				return ItemStack.EMPTY;
+			}
+			return retval;
 		}
 
 		@Override

@@ -13,7 +13,7 @@
     "enchantability": 5,
     "useDuration": 12,
     "toolType": 1.0,
-    "damageCount": 0,
+    "damageCount": 8,
     "destroyAnyBlock": false,
     "stayInGridWhenCrafting": true,
     "damageOnCrafting": true,
