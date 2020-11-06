@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "hantai_no_tengoku:blocks/greydirt",
+    "up": "hantai_no_tengoku:blocks/greygrasstop",
+    "north": "hantai_no_tengoku:blocks/greygrass",
+    "east": "hantai_no_tengoku:blocks/greygrass",
+    "south": "hantai_no_tengoku:blocks/greygrass",
+    "west": "hantai_no_tengoku:blocks/greygrass",
+    "particle": "hantai_no_tengoku:blocks/greydirt"
+  }
+}

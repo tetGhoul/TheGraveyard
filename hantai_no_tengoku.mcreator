@@ -157,6 +157,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "void_people"
+    },
+    {
+      "name": "VoidSoil",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_soil"
     }
   ],
   "variable_elements": [],
@@ -170,6 +179,7 @@
       "block.hantai_no_tengoku.tengoku_stone": "Tengoku Stone",
       "item.hantai_no_tengoku.tengoku_infused_diamond": "Tengoku Infused Diamond",
       "item.hantai_no_tengoku.low_tier_demon": "Low Tier Demon Spawn Egg",
+      "block.hantai_no_tengoku.void_soil": "Void Soil",
       "entity.hantai_no_tengoku.low_tier_demon": "Low Tier Demon",
       "item.hantai_no_tengoku.souls": "Souls",
       "entity.hantai_no_tengoku.void_people": "Void People"
