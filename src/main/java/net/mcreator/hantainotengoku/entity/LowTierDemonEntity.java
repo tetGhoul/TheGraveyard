@@ -132,12 +132,12 @@ public class LowTierDemonEntity extends HantaiNoTengokuModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
+			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, true));
 			this.goalSelector.addGoal(2, new FollowOwnerGoal(this, 7, (float) 10, (float) 15, false));
 			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 1));
 			this.goalSelector.addGoal(4, new OwnerHurtTargetGoal(this));
 			this.goalSelector.addGoal(5, new OwnerHurtByTargetGoal(this));
-			this.targetSelector.addGoal(6, new HurtByTargetGoal(this));
+			this.targetSelector.addGoal(6, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
 			this.goalSelector.addGoal(7, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(8, new SwimGoal(this));
 			this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {

@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "hantai_no_tengoku:blocks/tengokuinfusedobsidian",
-    "portal": "hantai_no_tengoku:blocks/tengokuinfusedobsidian"
+    "particle": "hantai_no_tengoku:blocks/portalnow",
+    "portal": "hantai_no_tengoku:blocks/portalnow"
   },
   "elements": [
     {
