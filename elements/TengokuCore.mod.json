@@ -34,7 +34,7 @@
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "CUSTOM:TengokuIngot"
+      "value": ""
     },
     "dropAmount": 1,
     "isBeaconBase": false,
@@ -65,7 +65,7 @@
     },
     "luminance": 0.45,
     "unbreakable": false,
-    "breakHarvestLevel": 2,
+    "breakHarvestLevel": 3,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"

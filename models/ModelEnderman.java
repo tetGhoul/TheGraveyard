@@ -18,8 +18,7 @@ public static class ModelEnderman extends EntityModel<Entity> {
 
 		head = new ModelRenderer(this);
 		head.setRotationPoint(0.0F, 0.0F, 0.0F);
-		head.setTextureOffset(0, 0).addBox(-4.0F, -24.0F, -4.0F, 8.0F, 8.0F, 8.0F, -0.1F, false);
-		head.setTextureOffset(0, 16).addBox(-4.0F, -22.0F, -4.0F, 8.0F, 8.0F, 8.0F, -0.1F, false);
+		head.setTextureOffset(0, 0).addBox(-3.95F, -23.05F, -3.3F, 8.0F, 8.0F, 6.0F, 0.9F, false);
 
 		body = new ModelRenderer(this);
 		body.setRotationPoint(0.0F, -14.0F, 0.0F);
@@ -55,6 +54,12 @@ public static class ModelEnderman extends EntityModel<Entity> {
 	}
 
 	@Override
+	public void setRotationAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks,
+			float netHeadYaw, float headPitch) {
+		// previously the render function, render code was moved to a method below
+	}
+
+	@Override
 	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red,
 			float green, float blue, float alpha) {
 		head.render(matrixStack, buffer, packedLight, packedOverlay);
@@ -69,13 +74,5 @@ public static class ModelEnderman extends EntityModel<Entity> {
 		modelRenderer.rotateAngleX = x;
 		modelRenderer.rotateAngleY = y;
 		modelRenderer.rotateAngleZ = z;
-	}
-
-	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity e) {
-		super.setRotationAngles(f, f1, f2, f3, f4, f5, e);
-		this.head.rotateAngleY = f3 / (180F / (float) Math.PI);
-		this.head.rotateAngleX = f4 / (180F / (float) Math.PI);
-		this.rightArm.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
-		this.leftArm.rotateAngleY = MathHelper.cos(f * 0.6662F) * f1;
 	}
 }

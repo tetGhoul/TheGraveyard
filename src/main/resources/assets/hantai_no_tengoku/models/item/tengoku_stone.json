@@ -1,5 +1,5 @@
 {
-  "parent": "hantai_no_tengoku:block/tengoku_core",
+  "parent": "hantai_no_tengoku:block/tengoku_stone",
   "display": {
     "thirdperson": {
       "rotation": [

@@ -1,7 +1,9 @@
 {
   "item.hantai_no_tengoku.tengoku_ingot": "Tengoku Core",
   "itemGroup.tabhantai_no_tengoku": "Hantai No Tengoku",
+  "block.hantai_no_tengoku.tengoku_stone": "Tengoku Stone",
   "item.hantai_no_tengoku.tengoku_infused_diamond": "Tengoku Infused Diamond",
-  "item.hantai_no_tengoku.souls": "Souls",
-  "block.hantai_no_tengoku.tengoku_core": "Tengoku Stone"
+  "item.hantai_no_tengoku.low_tier_demon": "Low Tier Demon Spawn Egg",
+  "entity.hantai_no_tengoku.low_tier_demon": "Low Tier Demon",
+  "item.hantai_no_tengoku.souls": "Souls"
 }

@@ -42,23 +42,13 @@ public class TengokuIngotItem extends HantaiNoTengokuModElements.ModElement {
 		}
 
 		@Override
-		public boolean hasContainerItem() {
-			return true;
-		}
-
-		@Override
-		public ItemStack getContainerItem(ItemStack itemstack) {
-			return new ItemStack(this);
-		}
-
-		@Override
 		public int getItemEnchantability() {
 			return 5;
 		}
 
 		@Override
 		public int getUseDuration(ItemStack itemstack) {
-			return 1;
+			return 12;
 		}
 
 		@Override

@@ -36,7 +36,6 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.hantainotengoku.itemgroup.HantaiNoTengokuItemGroup;
-import net.mcreator.hantainotengoku.item.TengokuIngotItem;
 import net.mcreator.hantainotengoku.HantaiNoTengokuModElements;
 
 import java.util.Random;
@@ -45,7 +44,7 @@ import java.util.Collections;
 
 @HantaiNoTengokuModElements.ModElement.Tag
 public class TengokuCoreBlock extends HantaiNoTengokuModElements.ModElement {
-	@ObjectHolder("hantai_no_tengoku:tengoku_core")
+	@ObjectHolder("hantai_no_tengoku:tengoku_stone")
 	public static final Block block = null;
 	public TengokuCoreBlock(HantaiNoTengokuModElements instance) {
 		super(instance, 3);
@@ -65,9 +64,9 @@ public class TengokuCoreBlock extends HantaiNoTengokuModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(25f, 10f).lightValue(7).harvestLevel(2)
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(25f, 10f).lightValue(7).harvestLevel(3)
 					.harvestTool(ToolType.PICKAXE).slipperiness(0.4f).notSolid());
-			setRegistryName("tengoku_core");
+			setRegistryName("tengoku_stone");
 		}
 
 		@Override
@@ -92,7 +91,7 @@ public class TengokuCoreBlock extends HantaiNoTengokuModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(TengokuIngotItem.block, (int) (1)));
+			return Collections.singletonList(new ItemStack(this, 1));
 		}
 	}
 	@Override
@@ -109,7 +108,7 @@ public class TengokuCoreBlock extends HantaiNoTengokuModElements.ModElement {
 						return false;
 					return super.place(world, generator, rand, pos, config);
 				}
-			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("tengoku_core", "tengoku_core", blockAt -> {
+			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("tengoku_stone", "tengoku_stone", blockAt -> {
 				boolean blockCriteria = false;
 				if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
 					blockCriteria = true;
