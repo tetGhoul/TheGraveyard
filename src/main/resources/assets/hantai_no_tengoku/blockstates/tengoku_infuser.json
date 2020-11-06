@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "hantai_no_tengoku:block/tengoku_infuser"
+    },
+    "facing=east": {
+      "model": "hantai_no_tengoku:block/tengoku_infuser",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "hantai_no_tengoku:block/tengoku_infuser",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "hantai_no_tengoku:block/tengoku_infuser",
+      "y": 270
+    }
+  }
+}

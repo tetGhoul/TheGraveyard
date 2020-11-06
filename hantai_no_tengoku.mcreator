@@ -187,6 +187,53 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "goodbye"
+    },
+    {
+      "name": "TengokuInfuserGUI",
+      "type": "gui",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_infuser_gui"
+    },
+    {
+      "name": "TengokuInfuser",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_infuser"
+    },
+    {
+      "name": "FurnaceProcedure",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "furnace_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -207,6 +254,7 @@
       "item.hantai_no_tengoku.low_tier_demon": "Low Tier Demon Spawn Egg",
       "entity.hantai_no_tengoku.low_tier_demon": "Low Tier Demon",
       "item.hantai_no_tengoku.limbo": "Portal Igniter Essence ",
+      "block.hantai_no_tengoku.tengoku_infuser": "Tengoku Infuser",
       "entity.hantai_no_tengoku.void_people": "Void People",
       "advancements.who_are_you.title": "Who Are You?"
     }

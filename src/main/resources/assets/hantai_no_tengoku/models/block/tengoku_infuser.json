@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "hantai_no_tengoku:blocks/furnaceside",
+    "up": "hantai_no_tengoku:blocks/furnaceside",
+    "north": "hantai_no_tengoku:blocks/furnacefront",
+    "east": "hantai_no_tengoku:blocks/furnaceside",
+    "south": "hantai_no_tengoku:blocks/furnaceside",
+    "west": "hantai_no_tengoku:blocks/furnaceside",
+    "particle": "hantai_no_tengoku:blocks/furnaceside"
+  }
+}
