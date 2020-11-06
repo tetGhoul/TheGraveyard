@@ -63,6 +63,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "low_tier_demon"
+    },
+    {
+      "name": "HowToGetTengokuCore",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "how_to_get_tengoku_core"
     }
   ],
   "variable_elements": [],

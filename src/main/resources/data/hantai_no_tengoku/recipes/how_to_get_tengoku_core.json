@@ -1,0 +1,12 @@
+{
+  "group": "hantai_no_tengoku",
+  "type": "minecraft:smelting",
+  "experience": 20,
+  "cookingtime": 500,
+  "ingredient": {
+    "item": "hantai_no_tengoku:tengoku_stone"
+  },
+  "result": {
+    "item": "hantai_no_tengoku:tengoku_ingot"
+  }
+}

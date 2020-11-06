@@ -1,0 +1,20 @@
+{
+  "_fv": 10,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 20.0,
+    "cookingTime": 500,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:TengokuCore"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:TengokuIngot"
+    },
+    "name": "how_to_get_tengoku_core",
+    "namespace": "mod"
+  }
+}
