@@ -148,6 +148,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "tengoku_infused_obsidien"
+    },
+    {
+      "name": "VoidPeople",
+      "type": "mob",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_people"
     }
   ],
   "variable_elements": [],
@@ -156,12 +165,14 @@
     "en_us": {
       "item.hantai_no_tengoku.tengoku_ingot": "Tengoku Core",
       "itemGroup.tabhantai_no_tengoku": "Hantai No Tengoku",
+      "item.hantai_no_tengoku.void_people": "Void People Spawn Egg",
       "block.hantai_no_tengoku.tengoku_infused_obsidian": "Tengoku Infused Obsidian",
       "block.hantai_no_tengoku.tengoku_stone": "Tengoku Stone",
       "item.hantai_no_tengoku.tengoku_infused_diamond": "Tengoku Infused Diamond",
       "item.hantai_no_tengoku.low_tier_demon": "Low Tier Demon Spawn Egg",
       "entity.hantai_no_tengoku.low_tier_demon": "Low Tier Demon",
-      "item.hantai_no_tengoku.souls": "Souls"
+      "item.hantai_no_tengoku.souls": "Souls",
+      "entity.hantai_no_tengoku.void_people": "Void People"
     }
   },
   "workspaceSettings": {
