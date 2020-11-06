@@ -201,8 +201,8 @@
     "en_us": {
       "block.hantai_no_tengoku.tengoku_infused_obsidian": "Tengoku Infused Obsidian",
       "block.hantai_no_tengoku.tengoku_stone": "Tengoku Stone",
-      "block.hantai_no_tengoku.void_soil": "Void Soil",
       "item.hantai_no_tengoku.tengoku_infused_diamond": "Tengoku Infused Diamond",
+      "block.hantai_no_tengoku.void_soil": "Void Soil",
       "item.hantai_no_tengoku.souls": "Souls",
       "item.hantai_no_tengoku.tengoku_ingot": "Tengoku Core",
       "itemGroup.tabhantai_no_tengoku": "Hantai No Tengoku",
