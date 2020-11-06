@@ -42,7 +42,7 @@ public class VoidSoilBlock extends HantaiNoTengokuModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.GROUND).hardnessAndResistance(3.5f, 10f).lightValue(0).harvestLevel(1)
-					.harvestTool(ToolType.SHOVEL).slipperiness(0.1f));
+					.harvestTool(ToolType.SHOVEL));
 			setRegistryName("void_soil");
 		}
 
