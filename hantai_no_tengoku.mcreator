@@ -72,6 +72,82 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "how_to_get_tengoku_core"
+    },
+    {
+      "name": "LimboPlayerEntersDimension",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "limbo_player_enters_dimension",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LimboPlayerLeavesDimension",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "limbo_player_leaves_dimension",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TengokuInfusedObsidian",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_infused_obsidian"
+    },
+    {
+      "name": "TengokuInfusedObsidien",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_infused_obsidien"
     }
   ],
   "variable_elements": [],
@@ -80,6 +156,7 @@
     "en_us": {
       "item.hantai_no_tengoku.tengoku_ingot": "Tengoku Core",
       "itemGroup.tabhantai_no_tengoku": "Hantai No Tengoku",
+      "block.hantai_no_tengoku.tengoku_infused_obsidian": "Tengoku Infused Obsidian",
       "block.hantai_no_tengoku.tengoku_stone": "Tengoku Stone",
       "item.hantai_no_tengoku.tengoku_infused_diamond": "Tengoku Infused Diamond",
       "item.hantai_no_tengoku.low_tier_demon": "Low Tier Demon Spawn Egg",

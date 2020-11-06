@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "hantai_no_tengoku:blocks/tengokuinfusedobsidian",
+    "up": "hantai_no_tengoku:blocks/tengokuinfusedobsidian",
+    "north": "hantai_no_tengoku:blocks/tengokuinfusedobsidian",
+    "east": "hantai_no_tengoku:blocks/tengokuinfusedobsidian",
+    "south": "hantai_no_tengoku:blocks/tengokuinfusedobsidian",
+    "west": "hantai_no_tengoku:blocks/tengokuinfusedobsidian",
+    "particle": "hantai_no_tengoku:blocks/tengokuinfusedobsidian"
+  }
+}
