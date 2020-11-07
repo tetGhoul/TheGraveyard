@@ -106,9 +106,13 @@
     "doesDespawnWhenIdle": true,
     "spawningProbability": 10,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 10,
-    "restrictionBiomes": [],
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 1,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:LimboBiome"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

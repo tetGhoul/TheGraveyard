@@ -59,7 +59,7 @@ import net.minecraft.block.BlockState;
 
 import net.mcreator.hantainotengoku.itemgroup.HantaiNoTengokuItemGroup;
 import net.mcreator.hantainotengoku.item.SoulsItem;
-import net.mcreator.hantainotengoku.item.DemonBombItem;
+import net.mcreator.hantainotengoku.item.DemonItemItem;
 import net.mcreator.hantainotengoku.HantaiNoTengokuModElements;
 
 import com.mojang.blaze3d.vertex.IVertexBuilder;
@@ -316,12 +316,12 @@ public class LowTierDemonEntity extends HantaiNoTengokuModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(DemonBombItem.block, (int) (1));
+			return new ItemStack(DemonItemItem.block, (int) (1));
 		}
 
 		@Override
 		protected ItemStack getArrowStack() {
-			return new ItemStack(DemonBombItem.block, (int) (1));
+			return new ItemStack(DemonItemItem.block, (int) (1));
 		}
 	}
 

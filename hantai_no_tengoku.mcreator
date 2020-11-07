@@ -225,9 +225,18 @@
       "registry_name": "soul_drop_rate_test"
     },
     {
+      "name": "DemonItem",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_item"
+    },
+    {
       "name": "DemonBombBulletHitsPlayer",
       "type": "procedure",
-      "sortid": 23,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -240,24 +249,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "DemonItem",
-      "type": "item",
-      "sortid": 24,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "demon_item"
-    },
-    {
-      "name": "DemonBomb",
-      "type": "gun",
-      "sortid": 23,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "demon_bomb"
     }
   ],
   "variable_elements": [],
@@ -265,7 +256,6 @@
   "language_map": {
     "en_us": {
       "advancements.goodbye.descr": "Leave Limbo ",
-      "item.hantai_no_tengoku.demon_bomb": "Demon Bomb",
       "item.hantai_no_tengoku.scythe": "Scythe",
       "block.hantai_no_tengoku.tengoku_infused_obsidian": "Tengoku Infused Obsidian",
       "block.hantai_no_tengoku.tengoku_stone": "Tengoku Stone",
