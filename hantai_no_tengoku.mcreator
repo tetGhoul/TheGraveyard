@@ -205,6 +205,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "grolem"
+    },
+    {
+      "name": "SoulDropRateTest",
+      "type": "loottable",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soul_drop_rate_test"
     }
   ],
   "variable_elements": [],
