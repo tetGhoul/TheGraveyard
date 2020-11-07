@@ -7,11 +7,11 @@ import net.minecraft.world.World;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.SwordItem;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
-import net.minecraft.item.HoeItem;
 import net.minecraft.client.util.ITooltipFlag;
 
 import net.mcreator.hantainotengoku.itemgroup.HantaiNoTengokuItemGroup;
@@ -29,7 +29,7 @@ public class ScytheItem extends HantaiNoTengokuModElements.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new HoeItem(new IItemTier() {
+		elements.items.add(() -> new SwordItem(new IItemTier() {
 			public int getMaxUses() {
 				return 210;
 			}
@@ -39,7 +39,7 @@ public class ScytheItem extends HantaiNoTengokuModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 3.5f;
+				return 3.300000000000001f;
 			}
 
 			public int getHarvestLevel() {
@@ -53,7 +53,7 @@ public class ScytheItem extends HantaiNoTengokuModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(Items.IRON_INGOT, (int) (1)));
 			}
-		}, -2.2999999999999998f, new Item.Properties().group(HantaiNoTengokuItemGroup.tab)) {
+		}, 3, -2.2999999999999998f, new Item.Properties().group(HantaiNoTengokuItemGroup.tab)) {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);

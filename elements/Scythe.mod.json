@@ -12,12 +12,12 @@
     "creativeTab": {
       "value": "CUSTOM:HantaiNoTengoku"
     },
-    "toolType": "Hoe",
+    "toolType": "Sword",
     "harvestLevel": 4,
     "efficiency": 4.0,
     "attackSpeed": 1.7000000000000002,
     "enchantability": 10,
-    "damageVsEntity": 5.5,
+    "damageVsEntity": 5.300000000000001,
     "usageCount": 210,
     "blocksAffected": [],
     "hasGlow": false,

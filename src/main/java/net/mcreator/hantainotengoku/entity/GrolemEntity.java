@@ -24,11 +24,9 @@ import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.TemptGoal;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
-import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.LookAtGoal;
@@ -36,13 +34,13 @@ import net.minecraft.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.FlyingEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
@@ -96,7 +94,7 @@ public class GrolemEntity extends HantaiNoTengokuModElements.ModElement {
 			};
 		});
 	}
-	public static class CustomEntity extends MonsterEntity {
+	public static class CustomEntity extends CreatureEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -117,14 +115,13 @@ public class GrolemEntity extends HantaiNoTengokuModElements.ModElement {
 			super.registerGoals();
 			this.goalSelector.addGoal(1, new TemptGoal(this, 1, Ingredient.fromItems(new ItemStack(Items.CHICKEN, (int) (1)).getItem()), false));
 			this.goalSelector.addGoal(2, new AvoidEntityGoal(this, FlyingEntity.class, (float) 17, 1, 1.2));
-			this.goalSelector.addGoal(3, new LeapAtTargetGoal(this, (float) 0.5));
-			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, MobEntity.class, true, true));
+			this.targetSelector.addGoal(3, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
+			this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, (float) 0.5));
 			this.goalSelector.addGoal(5, new MeleeAttackGoal(this, 1.2, false));
 			this.goalSelector.addGoal(6, new LookAtGoal(this, LivingEntity.class, (float) 6));
 			this.goalSelector.addGoal(7, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(8, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
-			this.goalSelector.addGoal(9, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(10, new SwimGoal(this));
+			this.goalSelector.addGoal(8, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(9, new SwimGoal(this));
 		}
 
 		@Override
