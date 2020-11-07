@@ -1,63 +1,16 @@
 
 package net.mcreator.hantainotengoku.entity;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.network.NetworkHooks;
-import net.minecraftforge.fml.network.FMLPlayMessages;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.client.registry.RenderingRegistry;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.gen.Heightmap;
-import net.minecraft.world.biome.Biome;
-import net.minecraft.world.World;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.DamageSource;
-import net.minecraft.network.IPacket;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.entity.ai.goal.TemptGoal;
-import net.minecraft.entity.ai.goal.SwimGoal;
-import net.minecraft.entity.ai.goal.RandomWalkingGoal;
-import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
-import net.minecraft.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.LookAtGoal;
-import net.minecraft.entity.ai.goal.LeapAtTargetGoal;
-import net.minecraft.entity.ai.goal.HurtByTargetGoal;
-import net.minecraft.entity.ai.goal.AvoidEntityGoal;
-import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.MobEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.FlyingEntity;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EntitySpawnPlacementRegistry;
-import net.minecraft.entity.EntityClassification;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.CreatureEntity;
-import net.minecraft.entity.CreatureAttribute;
-import net.minecraft.client.renderer.entity.model.BipedModel;
-import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
-import net.minecraft.client.renderer.entity.BipedRenderer;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.BlockState;
-
-import net.mcreator.hantainotengoku.itemgroup.HantaiNoTengokuItemGroup;
-import net.mcreator.hantainotengoku.HantaiNoTengokuModElements;
 
 @HantaiNoTengokuModElements.ModElement.Tag
 public class GrolemEntity extends HantaiNoTengokuModElements.ModElement {
+
 	public static EntityType entity = null;
+
 	public GrolemEntity(HantaiNoTengokuModElements instance) {
 		super(instance, 21);
+
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -66,19 +19,25 @@ public class GrolemEntity extends HantaiNoTengokuModElements.ModElement {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE).setShouldReceiveVelocityUpdates(true)
 				.setTrackingRange(50).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.8f, 0.8f)).build("grolem")
 						.setRegistryName("grolem");
+
 		elements.entities.add(() -> entity);
+
 		elements.items.add(() -> new SpawnEggItem(entity, -10066330, -3355444, new Item.Properties().group(HantaiNoTengokuItemGroup.tab))
 				.setRegistryName("grolem"));
+
 	}
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
+
 			biome.getSpawns(EntityClassification.CREATURE).add(new Biome.SpawnListEntry(entity, 13, 2, 6));
 		}
+
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos,
 						random) -> (world.getBlockState(pos.down()).getMaterial() == Material.ORGANIC && world.getLightSubtracted(pos, 0) > 8));
+
 	}
 
 	@SubscribeEvent
@@ -92,10 +51,14 @@ public class GrolemEntity extends HantaiNoTengokuModElements.ModElement {
 				}
 			};
 			customRender.addLayer(new BipedArmorLayer(customRender, new BipedModel(0.5f), new BipedModel(1)));
+
 			return customRender;
 		});
+
 	}
+
 	public static class CustomEntity extends CreatureEntity {
+
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -104,6 +67,7 @@ public class GrolemEntity extends HantaiNoTengokuModElements.ModElement {
 			super(type, world);
 			experienceValue = 10;
 			setNoAI(false);
+
 		}
 
 		@Override
@@ -114,6 +78,7 @@ public class GrolemEntity extends HantaiNoTengokuModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
+
 			this.goalSelector.addGoal(1, new TemptGoal(this, 1, Ingredient.fromItems(new ItemStack(Items.CHICKEN, (int) (1)).getItem()), false));
 			this.goalSelector.addGoal(2, new AvoidEntityGoal(this, FlyingEntity.class, (float) 17, 1, 1.2));
 			this.goalSelector.addGoal(3, new LeapAtTargetGoal(this, (float) 0.5));
@@ -124,6 +89,7 @@ public class GrolemEntity extends HantaiNoTengokuModElements.ModElement {
 			this.targetSelector.addGoal(8, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
 			this.goalSelector.addGoal(9, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(10, new SwimGoal(this));
+
 		}
 
 		@Override
@@ -159,15 +125,22 @@ public class GrolemEntity extends HantaiNoTengokuModElements.ModElement {
 		@Override
 		protected void registerAttributes() {
 			super.registerAttributes();
+
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
 				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.15);
+
 			if (this.getAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
 				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(2);
+
 			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)
 				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(2);
+
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
 			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(5);
+
 		}
+
 	}
+
 }
