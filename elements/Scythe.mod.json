@@ -27,6 +27,6 @@
       }
     ],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": true
+    "damageOnCrafting": false
   }
 }
