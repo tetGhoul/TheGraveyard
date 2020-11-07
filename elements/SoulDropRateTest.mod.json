@@ -16,14 +16,14 @@
             "item": {
               "value": "Blocks.AIR"
             },
-            "weight": 90
+            "weight": 85
           },
           {
             "type": "item",
             "item": {
               "value": "CUSTOM:Souls"
             },
-            "weight": 10
+            "weight": 15
           }
         ]
       }

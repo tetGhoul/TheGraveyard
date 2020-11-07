@@ -10,12 +10,12 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:air",
-          "weight": 90
+          "weight": 85
         },
         {
           "type": "minecraft:item",
           "name": "hantai_no_tengoku:souls",
-          "weight": 10
+          "weight": 15
         }
       ]
     }
