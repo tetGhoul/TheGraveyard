@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 0
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 85
+        },
+        {
+          "type": "minecraft:item",
+          "name": "hantai_no_tengoku:souls",
+          "weight": 15
+        }
+      ]
+    }
+  ]
+}
