@@ -1,0 +1,8 @@
+{
+  "parent": "hantai_no_tengoku:custom/weaponscytheprobably",
+  "textures": {
+    "2": "hantai_no_tengoku:blocks/blade",
+    "3": "hantai_no_tengoku:blocks/blackkindabutnoise",
+    "particle": "hantai_no_tengoku:items/blackkindabutnoise"
+  }
+}
