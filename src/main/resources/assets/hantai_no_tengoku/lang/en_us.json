@@ -1,5 +1,6 @@
 {
   "advancements.goodbye.descr": "Leave Limbo ",
+  "item.hantai_no_tengoku.demon_bomb": "Demon Bomb",
   "item.hantai_no_tengoku.scythe": "Scythe",
   "block.hantai_no_tengoku.tengoku_infused_obsidian": "Tengoku Infused Obsidian",
   "block.hantai_no_tengoku.tengoku_stone": "Tengoku Stone",
@@ -8,6 +9,7 @@
   "item.hantai_no_tengoku.souls": "Souls",
   "advancements.goodbye.title": "Goodbye!",
   "entity.hantai_no_tengoku.grolem": "Grolem",
+  "item.hantai_no_tengoku.demon_item": "Demon Item",
   "advancements.who_are_you.descr": "Entered Limbo",
   "item.hantai_no_tengoku.grolem": "Grolem Spawn Egg",
   "item.hantai_no_tengoku.tengoku_ingot": "Tengoku Core",

@@ -103,7 +103,7 @@
     ],
     "ranged": true,
     "rangedAttackItem": {
-      "value": "Items.TRIDENT"
+      "value": "CUSTOM:DemonBomb"
     },
     "rangedItemType": "Default item",
     "spawnThisMob": true,

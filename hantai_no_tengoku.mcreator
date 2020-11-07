@@ -223,6 +223,41 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "soul_drop_rate_test"
+    },
+    {
+      "name": "DemonBombBulletHitsPlayer",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_bomb_bullet_hits_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DemonItem",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_item"
+    },
+    {
+      "name": "DemonBomb",
+      "type": "gun",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_bomb"
     }
   ],
   "variable_elements": [],
@@ -230,6 +265,7 @@
   "language_map": {
     "en_us": {
       "advancements.goodbye.descr": "Leave Limbo ",
+      "item.hantai_no_tengoku.demon_bomb": "Demon Bomb",
       "item.hantai_no_tengoku.scythe": "Scythe",
       "block.hantai_no_tengoku.tengoku_infused_obsidian": "Tengoku Infused Obsidian",
       "block.hantai_no_tengoku.tengoku_stone": "Tengoku Stone",
@@ -238,6 +274,7 @@
       "item.hantai_no_tengoku.souls": "Souls",
       "advancements.goodbye.title": "Goodbye!",
       "entity.hantai_no_tengoku.grolem": "Grolem",
+      "item.hantai_no_tengoku.demon_item": "Demon Item",
       "advancements.who_are_you.descr": "Entered Limbo",
       "item.hantai_no_tengoku.grolem": "Grolem Spawn Egg",
       "item.hantai_no_tengoku.tengoku_ingot": "Tengoku Core",

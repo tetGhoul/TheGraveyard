@@ -24,7 +24,6 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.pathfinding.FlyingPathNavigator;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
@@ -60,6 +59,7 @@ import net.minecraft.block.BlockState;
 
 import net.mcreator.hantainotengoku.itemgroup.HantaiNoTengokuItemGroup;
 import net.mcreator.hantainotengoku.item.SoulsItem;
+import net.mcreator.hantainotengoku.item.DemonBombItem;
 import net.mcreator.hantainotengoku.HantaiNoTengokuModElements;
 
 import com.mojang.blaze3d.vertex.IVertexBuilder;
@@ -316,12 +316,12 @@ public class LowTierDemonEntity extends HantaiNoTengokuModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(Items.TRIDENT, (int) (1));
+			return new ItemStack(DemonBombItem.block, (int) (1));
 		}
 
 		@Override
 		protected ItemStack getArrowStack() {
-			return new ItemStack(Items.TRIDENT, (int) (1));
+			return new ItemStack(DemonBombItem.block, (int) (1));
 		}
 	}
 
