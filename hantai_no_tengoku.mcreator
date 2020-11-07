@@ -234,6 +234,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "Grolem",
+      "type": "mob",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "grolem"
     }
   ],
   "variable_elements": [],
@@ -243,11 +252,13 @@
       "advancements.goodbye.descr": "Leave Limbo ",
       "block.hantai_no_tengoku.tengoku_infused_obsidian": "Tengoku Infused Obsidian",
       "block.hantai_no_tengoku.tengoku_stone": "Tengoku Stone",
-      "item.hantai_no_tengoku.tengoku_infused_diamond": "Tengoku Infused Diamond",
       "block.hantai_no_tengoku.void_soil": "Void Soil",
+      "item.hantai_no_tengoku.tengoku_infused_diamond": "Tengoku Infused Diamond",
       "item.hantai_no_tengoku.souls": "Souls",
       "advancements.goodbye.title": "Goodbye!",
+      "entity.hantai_no_tengoku.grolem": "Grolem",
       "advancements.who_are_you.descr": "Entered Limbo",
+      "item.hantai_no_tengoku.grolem": "Grolem Spawn Egg",
       "item.hantai_no_tengoku.tengoku_ingot": "Tengoku Core",
       "itemGroup.tabhantai_no_tengoku": "Hantai No Tengoku",
       "item.hantai_no_tengoku.void_people": "Void People Spawn Egg",
