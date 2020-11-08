@@ -383,24 +383,6 @@
       }
     },
     {
-      "name": "Discdiscdiscdiscdiscks",
-      "type": "musicdisc",
-      "sortid": 31,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "discdiscdiscdiscdiscks"
-    },
-    {
-      "name": "Bruh",
-      "type": "musicdisc",
-      "sortid": 32,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bruh"
-    },
-    {
       "name": "DemonEssenceInfusedStick",
       "type": "item",
       "sortid": 35,
@@ -624,10 +606,8 @@
       "block.hantai_no_tengoku.tengoku_infused_obsidian": "Tengoku Infused Obsidian",
       "block.hantai_no_tengoku.void_soil": "Void Soil",
       "item.hantai_no_tengoku.tengoku_infused_diamond": "Tengoku Infused Diamond",
-      "item.hantai_no_tengoku.tengoku_blade_blade": "Tengoku Blade Blade",
+      "item.hantai_no_tengoku.tengoku_blade_blade": "Tengoku Blade ",
       "advancements.goodbye.title": "Goodbye!",
-      "item.hantai_no_tengoku.discdiscdiscdiscdiscks.desc": "p racist disc honestly",
-      "item.hantai_no_tengoku.discdiscdiscdiscdiscks": "Discdiscdiscdiscdiscks",
       "item.hantai_no_tengoku.demon_item": "Demon Item",
       "item.hantai_no_tengoku.demon_essence_infused_stick": "Demon Essence Infused Stick",
       "item.hantai_no_tengoku.grolem": "Grolem Spawn Egg",
@@ -640,7 +620,8 @@
       "item.hantai_no_tengoku.bowl_of_ash_item": "Bowl Of Ash Item",
       "item.hantai_no_tengoku.demon_bomb_test": "Demon Bomb ",
       "item.hantai_no_tengoku.tengoku_armor_helmet": "Tengoku Helmet",
-      "item.hantai_no_tengoku.bruh.desc": "bruh",
+      "item.hantai_no_tengoku.tengoku_star": "Tengoku Star",
+      "item.hantai_no_tengoku.tengoku_full": "Tengoku Full",
       "item.hantai_no_tengoku.tengoku_armor_boots": "Tengoku Boots",
       "item.hantai_no_tengoku.scythe": "Scythe",
       "item.hantai_no_tengoku.tengoku_armor_leggings": "Tengoku Leggings",
@@ -649,10 +630,12 @@
       "item.hantai_no_tengoku.demon_dweller_blade": "Demon Dweller Blade",
       "item.hantai_no_tengoku.souls": "Souls",
       "entity.hantai_no_tengoku.grolem": "Grolem",
-      "item.hantai_no_tengoku.bruh": "Bruh",
+      "item.hantai_no_tengoku.book_of_infinite_knowledge": "Book Of Infinite Knowledge",
       "advancements.who_are_you.descr": "Entered Limbo",
       "item.hantai_no_tengoku.tengoku_ingot": "Tengoku Core",
       "item.hantai_no_tengoku.tengoku_armor_chestplate": "Tengoku Chestplate",
+      "item.hantai_no_tengoku.tengoku_stick_2": "Tengoku Stick 2",
+      "item.hantai_no_tengoku.tengoku_stick_1": "Tengoku Stick 1",
       "item.hantai_no_tengoku.low_tier_demon": "Low Tier Demon Spawn Egg",
       "item.hantai_no_tengoku.limbo": "Portal Igniter Essence ",
       "entity.hantai_no_tengoku.low_tier_demon": "Low Tier Demon",
@@ -670,8 +653,11 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
     "currentGenerator": "forge-1.15.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.hantainotengoku",
     "lockBaseModFiles": false
   },
