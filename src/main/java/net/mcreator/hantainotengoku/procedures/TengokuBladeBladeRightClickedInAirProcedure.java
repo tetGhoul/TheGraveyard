@@ -22,12 +22,12 @@ public class TengokuBladeBladeRightClickedInAirProcedure extends HantaiNoTengoku
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.STRENGTH, (int) 15, (int) 1));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.STRENGTH, (int) 300, (int) 1));
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.REGENERATION, (int) 5, (int) 1));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.REGENERATION, (int) 100, (int) 1));
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.ABSORPTION, (int) 15, (int) 1));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.ABSORPTION, (int) 300, (int) 1));
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SPEED, (int) 15, (int) 5));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SPEED, (int) 300, (int) 2));
 	}
 }
