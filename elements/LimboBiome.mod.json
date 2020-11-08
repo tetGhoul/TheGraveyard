@@ -64,7 +64,7 @@
           "value": "CUSTOM:LowTierDemon"
         },
         "minGroup": 1,
-        "maxGroup": 3,
+        "maxGroup": 7,
         "weight": 10,
         "spawnType": "monster"
       },
@@ -73,8 +73,8 @@
           "value": "CUSTOM:VoidPeople"
         },
         "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 20,
+        "maxGroup": 10,
+        "weight": 15,
         "spawnType": "creature"
       }
     ]

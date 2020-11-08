@@ -80,8 +80,8 @@ public class LimboBiomeBiome extends HantaiNoTengokuModElements.ModElement {
 									new SimpleBlockStateProvider(Blocks.OAK_LEAVES.getDefaultState()))).baseHeight(7)
 											.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
 							.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(2, 0.1F, 1))));
-			this.addSpawn(EntityClassification.MONSTER, new Biome.SpawnListEntry(LowTierDemonEntity.entity, 10, 1, 3));
-			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(VoidPeopleEntity.entity, 20, 4, 4));
+			this.addSpawn(EntityClassification.MONSTER, new Biome.SpawnListEntry(LowTierDemonEntity.entity, 10, 1, 7));
+			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(VoidPeopleEntity.entity, 15, 4, 10));
 		}
 
 		@OnlyIn(Dist.CLIENT)
