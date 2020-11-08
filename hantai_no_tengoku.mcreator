@@ -410,23 +410,6 @@
       "registry_name": "demon_essence_infused_stick"
     },
     {
-      "name": "GrolemWalk",
-      "type": "procedure",
-      "sortid": 28,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "grolem_walk",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "DemonEssenceInfusedStickRecipe",
       "type": "recipe",
       "sortid": 35,
@@ -559,31 +542,13 @@
       "registry_name": "low_tier_demon_essence_drop_rate"
     },
     {
-      "name": "TengokuStick1",
+      "name": "BookOfInfiniteKnowledge",
       "type": "item",
-      "sortid": 40,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "tengoku_stick_1"
-    },
-    {
-      "name": "TengokuStick2",
-      "type": "item",
-      "sortid": 41,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tengoku_stick_2"
-    },
-    {
-      "name": "TengokuFull",
-      "type": "item",
-      "sortid": 42,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tengoku_full"
+      "registry_name": "book_of_infinite_knowledge"
     },
     {
       "name": "TengokuStar",
@@ -613,13 +578,31 @@
       "registry_name": "tengoku_blade_recipe"
     },
     {
-      "name": "BookOfInfiniteKnowledge",
+      "name": "TengokuStick1",
       "type": "item",
-      "sortid": 46,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "book_of_infinite_knowledge"
+      "registry_name": "tengoku_stick_1"
+    },
+    {
+      "name": "TengokuStick2",
+      "type": "item",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_stick_2"
+    },
+    {
+      "name": "TengokuFull",
+      "type": "item",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_full"
     }
   ],
   "variable_elements": [],
@@ -641,14 +624,14 @@
       "block.hantai_no_tengoku.tengoku_infused_obsidian": "Tengoku Infused Obsidian",
       "block.hantai_no_tengoku.void_soil": "Void Soil",
       "item.hantai_no_tengoku.tengoku_infused_diamond": "Tengoku Infused Diamond",
-      "item.hantai_no_tengoku.tengoku_blade_blade": "Tengoku Blade ",
+      "item.hantai_no_tengoku.tengoku_blade_blade": "Tengoku Blade Blade",
       "advancements.goodbye.title": "Goodbye!",
       "item.hantai_no_tengoku.discdiscdiscdiscdiscks.desc": "p racist disc honestly",
       "item.hantai_no_tengoku.discdiscdiscdiscdiscks": "Discdiscdiscdiscdiscks",
       "item.hantai_no_tengoku.demon_item": "Demon Item",
+      "item.hantai_no_tengoku.demon_essence_infused_stick": "Demon Essence Infused Stick",
       "item.hantai_no_tengoku.grolem": "Grolem Spawn Egg",
       "item.hantai_no_tengoku.demon_essence": "Demon Essence",
-      "item.hantai_no_tengoku.demon_essence_infused_stick": "Demon Essence Infused Stick",
       "item.hantai_no_tengoku.soul_soup": "Soul Soup",
       "itemGroup.tabhantai_no_tengoku": "Hantai No Tengoku",
       "item.hantai_no_tengoku.void_people": "Void People Spawn Egg",
@@ -658,8 +641,6 @@
       "item.hantai_no_tengoku.demon_bomb_test": "Demon Bomb ",
       "item.hantai_no_tengoku.tengoku_armor_helmet": "Tengoku Helmet",
       "item.hantai_no_tengoku.bruh.desc": "bruh",
-      "item.hantai_no_tengoku.tengoku_star": "Tengoku Star",
-      "item.hantai_no_tengoku.tengoku_full": "Tengoku Full",
       "item.hantai_no_tengoku.tengoku_armor_boots": "Tengoku Boots",
       "item.hantai_no_tengoku.scythe": "Scythe",
       "item.hantai_no_tengoku.tengoku_armor_leggings": "Tengoku Leggings",
@@ -668,13 +649,10 @@
       "item.hantai_no_tengoku.demon_dweller_blade": "Demon Dweller Blade",
       "item.hantai_no_tengoku.souls": "Souls",
       "entity.hantai_no_tengoku.grolem": "Grolem",
-      "item.hantai_no_tengoku.book_of_infinite_knowledge": "Book Of Infinite Knowledge",
       "item.hantai_no_tengoku.bruh": "Bruh",
       "advancements.who_are_you.descr": "Entered Limbo",
       "item.hantai_no_tengoku.tengoku_ingot": "Tengoku Core",
       "item.hantai_no_tengoku.tengoku_armor_chestplate": "Tengoku Chestplate",
-      "item.hantai_no_tengoku.tengoku_stick_2": "Tengoku Stick 2",
-      "item.hantai_no_tengoku.tengoku_stick_1": "Tengoku Stick 1",
       "item.hantai_no_tengoku.low_tier_demon": "Low Tier Demon Spawn Egg",
       "item.hantai_no_tengoku.limbo": "Portal Igniter Essence ",
       "entity.hantai_no_tengoku.low_tier_demon": "Low Tier Demon",

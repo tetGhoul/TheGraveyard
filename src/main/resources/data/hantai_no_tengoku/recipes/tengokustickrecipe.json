@@ -7,14 +7,14 @@
   ],
   "key": {
     "0": {
-      "item": "hantai_no_tengoku:tengoku_stick_2"
+      "item": "hantai_no_tengoku:unknown_element"
     },
     "1": {
-      "item": "hantai_no_tengoku:tengoku_stick_1"
+      "item": "hantai_no_tengoku:unknown_element"
     }
   },
   "result": {
-    "item": "hantai_no_tengoku:tengoku_full",
+    "item": "hantai_no_tengoku:unknown_element",
     "count": 1
   }
 }
