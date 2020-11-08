@@ -442,6 +442,23 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "low_tier_demon_essence_drop_rate"
+    },
+    {
+      "name": "GrolemWalk",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "grolem_walk",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
