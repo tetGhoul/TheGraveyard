@@ -1,0 +1,48 @@
+{
+  "_fv": 10,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "demon_bomb_thingy",
+    "customModelName": "Normal",
+    "name": "Demon Bomb ",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:HantaiNoTengoku"
+    },
+    "stackSize": 16,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 3.9999999999999996,
+    "bulletKnockback": 2,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:DemonItem"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "DemonBombTestBulletHitsBlock"
+    },
+    "onBulletHitsPlayer": {
+      "name": "DemonBombTestBulletHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "DemonBombTestBulletHitsBlock"
+    },
+    "onBulletFlyingTick": {
+      "name": "DemonBombBulletHitsPlayer"
+    }
+  }
+}
