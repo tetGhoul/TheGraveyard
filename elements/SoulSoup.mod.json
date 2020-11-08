@@ -15,10 +15,10 @@
     "stackSize": 64,
     "nutritionalValue": 7,
     "saturation": 0.3,
-    "eatingSpeed": 30,
+    "eatingSpeed": 80,
     "forDogs": false,
     "isAlwaysEdible": true,
-    "animation": "drink",
+    "animation": "eat",
     "hasGlow": true,
     "onEaten": {
       "name": "SoulSoupEffects"

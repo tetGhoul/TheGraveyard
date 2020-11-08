@@ -267,15 +267,6 @@
       "registry_name": "tengoku_armor_body_recipe"
     },
     {
-      "name": "TengokuBlade",
-      "type": "item",
-      "sortid": 28,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tengoku_blade"
-    },
-    {
       "name": "Scythe",
       "type": "tool",
       "sortid": 22,
@@ -390,6 +381,49 @@
           }
         ]
       }
+    },
+    {
+      "name": "TengokuBladeBladeRightClickedInAir",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_blade_blade_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TengokuBladeBladeLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_blade_blade_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TengokuBladeBlade",
+      "type": "tool",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_blade_blade"
     }
   ],
   "variable_elements": [],
@@ -400,6 +434,7 @@
       "block.hantai_no_tengoku.tengoku_infused_obsidian": "Tengoku Infused Obsidian",
       "block.hantai_no_tengoku.void_soil": "Void Soil",
       "item.hantai_no_tengoku.tengoku_infused_diamond": "Tengoku Infused Diamond",
+      "item.hantai_no_tengoku.tengoku_blade_blade": "Tengoku Blade Blade",
       "advancements.goodbye.title": "Goodbye!",
       "item.hantai_no_tengoku.demon_item": "Demon Item",
       "item.hantai_no_tengoku.grolem": "Grolem Spawn Egg",
@@ -413,7 +448,6 @@
       "item.hantai_no_tengoku.tengoku_armor_boots": "Tengoku Boots",
       "item.hantai_no_tengoku.scythe": "Scythe",
       "item.hantai_no_tengoku.tengoku_armor_leggings": "Tengoku Leggings",
-      "item.hantai_no_tengoku.tengoku_blade": "Tengoku Blade",
       "block.hantai_no_tengoku.tengoku_stone": "Tengoku Stone",
       "item.hantai_no_tengoku.souls": "Souls",
       "entity.hantai_no_tengoku.grolem": "Grolem",
