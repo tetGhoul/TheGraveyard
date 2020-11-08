@@ -459,6 +459,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "low_tier_demon_essence_drop_rate"
+    },
+    {
+      "name": "DemonEssenceInfusedStick",
+      "type": "item",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_essence_infused_stick"
+    },
+    {
+      "name": "DemonEssenceInfusedStickRecipe",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_essence_infused_stick_recipe"
     }
   ],
   "variable_elements": [],
@@ -472,8 +490,9 @@
       "item.hantai_no_tengoku.tengoku_blade_blade": "Tengoku Blade Blade",
       "advancements.goodbye.title": "Goodbye!",
       "item.hantai_no_tengoku.demon_item": "Demon Item",
-      "item.hantai_no_tengoku.grolem": "Grolem Spawn Egg",
       "item.hantai_no_tengoku.demon_essence": "Demon Essence",
+      "item.hantai_no_tengoku.grolem": "Grolem Spawn Egg",
+      "item.hantai_no_tengoku.demon_essence_infused_stick": "Demon Essence Infused Stick",
       "item.hantai_no_tengoku.soul_soup": "Soul Soup",
       "itemGroup.tabhantai_no_tengoku": "Hantai No Tengoku",
       "item.hantai_no_tengoku.void_people": "Void People Spawn Egg",
