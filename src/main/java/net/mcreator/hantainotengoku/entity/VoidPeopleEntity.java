@@ -15,8 +15,10 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
+import net.minecraft.pathfinding.FlyingPathNavigator;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.Item;
@@ -29,6 +31,7 @@ import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
+import net.minecraft.entity.ai.controller.FlyingMovementController;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
@@ -38,6 +41,7 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
 import net.minecraft.client.renderer.entity.BipedRenderer;
+import net.minecraft.block.BlockState;
 
 import net.mcreator.hantainotengoku.itemgroup.HantaiNoTengokuItemGroup;
 import net.mcreator.hantainotengoku.HantaiNoTengokuModElements;
@@ -97,6 +101,8 @@ public class VoidPeopleEntity extends HantaiNoTengokuModElements.ModElement {
 			super(type, world);
 			experienceValue = 0;
 			setNoAI(false);
+			this.moveController = new FlyingMovementController(this, 10, true);
+			this.navigator = new FlyingPathNavigator(this, this.world);
 		}
 
 		@Override
@@ -107,13 +113,13 @@ public class VoidPeopleEntity extends HantaiNoTengokuModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.targetSelector.addGoal(1, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
+			this.goalSelector.addGoal(1, new RandomWalkingGoal(this, 1));
 			this.goalSelector.addGoal(2, new LookRandomlyGoal(this));
-			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
-			this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, (float) 2));
-			this.goalSelector.addGoal(5, new RandomWalkingGoal(this, 1));
-			this.goalSelector.addGoal(6, new SwimGoal(this));
-			this.goalSelector.addGoal(7, new MeleeAttackGoal(this, 1.2, true));
+			this.goalSelector.addGoal(3, new SwimGoal(this));
+			this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, true));
+			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
+			this.goalSelector.addGoal(6, new LeapAtTargetGoal(this, (float) 1));
+			this.targetSelector.addGoal(7, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
 		}
 
 		@Override
@@ -141,6 +147,11 @@ public class VoidPeopleEntity extends HantaiNoTengokuModElements.ModElement {
 		}
 
 		@Override
+		public boolean onLivingFall(float l, float d) {
+			return false;
+		}
+
+		@Override
 		public boolean attackEntityFrom(DamageSource source, float amount) {
 			if (source == DamageSource.CACTUS)
 				return false;
@@ -161,6 +172,23 @@ public class VoidPeopleEntity extends HantaiNoTengokuModElements.ModElement {
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
 			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
+			if (this.getAttribute(SharedMonsterAttributes.FLYING_SPEED) == null)
+				this.getAttributes().registerAttribute(SharedMonsterAttributes.FLYING_SPEED);
+			this.getAttribute(SharedMonsterAttributes.FLYING_SPEED).setBaseValue(0.3);
+		}
+
+		@Override
+		protected void updateFallState(double y, boolean onGroundIn, BlockState state, BlockPos pos) {
+		}
+
+		@Override
+		public void setNoGravity(boolean ignored) {
+			super.setNoGravity(true);
+		}
+
+		public void livingTick() {
+			super.livingTick();
+			this.setNoGravity(true);
 		}
 	}
 }
