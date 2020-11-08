@@ -424,6 +424,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "tengoku_blade_blade"
+    },
+    {
+      "name": "DemonEssence",
+      "type": "item",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_essence"
+    },
+    {
+      "name": "LowTierDemonEssenceDropRate",
+      "type": "loottable",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "low_tier_demon_essence_drop_rate"
     }
   ],
   "variable_elements": [],
@@ -438,6 +456,7 @@
       "advancements.goodbye.title": "Goodbye!",
       "item.hantai_no_tengoku.demon_item": "Demon Item",
       "item.hantai_no_tengoku.grolem": "Grolem Spawn Egg",
+      "item.hantai_no_tengoku.demon_essence": "Demon Essence",
       "item.hantai_no_tengoku.soul_soup": "Soul Soup",
       "itemGroup.tabhantai_no_tengoku": "Hantai No Tengoku",
       "item.hantai_no_tengoku.void_people": "Void People Spawn Egg",
