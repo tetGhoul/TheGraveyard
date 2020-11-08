@@ -65,7 +65,7 @@ public class GrolemEntity extends HantaiNoTengokuModElements.ModElement {
 	@Override
 	public void initElements() {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(50).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(3f, 3f)).build("grolem")
+				.setTrackingRange(50).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.95f)).build("grolem")
 						.setRegistryName("grolem");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -65536, -3342388, new Item.Properties().group(HantaiNoTengokuItemGroup.tab))
@@ -75,7 +75,7 @@ public class GrolemEntity extends HantaiNoTengokuModElements.ModElement {
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
-			biome.getSpawns(EntityClassification.CREATURE).add(new Biome.SpawnListEntry(entity, 13, 2, 6));
+			biome.getSpawns(EntityClassification.CREATURE).add(new Biome.SpawnListEntry(entity, 20, 2, 6));
 		}
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos,

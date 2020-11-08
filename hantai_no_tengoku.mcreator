@@ -207,6 +207,15 @@
       "registry_name": "grolem"
     },
     {
+      "name": "Scythe",
+      "type": "tool",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "scythe"
+    },
+    {
       "name": "SoulDropRateTest",
       "type": "loottable",
       "sortid": 22,
@@ -216,64 +225,13 @@
       "registry_name": "soul_drop_rate_test"
     },
     {
-      "name": "TengokuArmorBootsRecipe",
-      "type": "recipe",
-      "sortid": 27,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tengoku_armor_boots_recipe"
-    },
-    {
-      "name": "TengokuArmorHelmetRecipe",
-      "type": "recipe",
+      "name": "DemonItem",
+      "type": "item",
       "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "tengoku_armor_helmet_recipe"
-    },
-    {
-      "name": "TengokuArmorLeggingsRecipe",
-      "type": "recipe",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tengoku_armor_leggings_recipe"
-    },
-    {
-      "name": "TengokuArmor",
-      "type": "armor",
-      "sortid": 23,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tengoku_armor",
-      "metadata": {
-        "eh": true,
-        "el": true,
-        "eb": true,
-        "ec": true
-      }
-    },
-    {
-      "name": "TengokuArmorBodyRecipe",
-      "type": "recipe",
-      "sortid": 25,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tengoku_armor_body_recipe"
-    },
-    {
-      "name": "Scythe",
-      "type": "tool",
-      "sortid": 22,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "scythe"
+      "registry_name": "demon_item"
     },
     {
       "name": "DemonBombBulletHitsPlayer",
@@ -291,15 +249,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "DemonItem",
-      "type": "item",
-      "sortid": 24,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "demon_item"
     },
     {
       "name": "DemonBombTestBulletHitsBlock",
@@ -357,13 +306,80 @@
       "registry_name": "demon_bomb_test"
     },
     {
-      "name": "SoulSoup",
-      "type": "food",
-      "sortid": 29,
+      "name": "GrolemWalk",
+      "type": "procedure",
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "soul_soup"
+      "registry_name": "grolem_walk",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TengokuArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_armor_boots_recipe"
+    },
+    {
+      "name": "TengokuArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_armor_helmet_recipe"
+    },
+    {
+      "name": "TengokuArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_armor_leggings_recipe"
+    },
+    {
+      "name": "TengokuBladeBladeLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_blade_blade_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TengokuArmor",
+      "type": "armor",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
     },
     {
       "name": "SoulSoupEffects",
@@ -383,6 +399,15 @@
       }
     },
     {
+      "name": "TengokuArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_armor_body_recipe"
+    },
+    {
       "name": "TengokuBladeBladeRightClickedInAir",
       "type": "procedure",
       "sortid": 31,
@@ -400,21 +425,13 @@
       }
     },
     {
-      "name": "TengokuBladeBladeLivingEntityIsHitWithTool",
-      "type": "procedure",
-      "sortid": 32,
+      "name": "SoulSoup",
+      "type": "food",
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "tengoku_blade_blade_living_entity_is_hit_with_tool",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
+      "registry_name": "soul_soup"
     },
     {
       "name": "TengokuBladeBlade",
@@ -442,23 +459,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "low_tier_demon_essence_drop_rate"
-    },
-    {
-      "name": "GrolemWalk",
-      "type": "procedure",
-      "sortid": 28,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "grolem_walk",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
     }
   ],
   "variable_elements": [],
