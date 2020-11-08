@@ -119,120 +119,221 @@
         }
       }
     },
-    "animation.grolem.walk": {
-      "loop": true,
-      "animation_length": 0.92,
+    "animation.grolem.new.right.punch": {
+      "animation_length": 1.04,
       "bones": {
-        "UpperLeftArm": {
+        "LeftArm": {
           "rotation": {
-            "0.0": {
-              "post": [
-                -7.5,
-                0,
-                0
-              ],
-              "lerp_mode": "catmullrom"
-            },
-            "0.44": {
-              "post": [
-                7.5,
-                0,
-                0
-              ],
-              "lerp_mode": "catmullrom"
-            },
-            "0.88": {
-              "post": [
-                -7.5,
-                0,
-                0
-              ],
-              "lerp_mode": "catmullrom"
-            }
+            "0.0": [
+              0,
+              -5,
+              0
+            ],
+            "0.08": [
+              12.5,
+              -5,
+              -7.5
+            ],
+            "0.16": [
+              30,
+              -2.5,
+              -17.5
+            ]
           }
         },
-        "UpperRightArm": {
+        "LowerLeftArm": {
           "rotation": {
-            "0.0": {
-              "post": [
-                7.5,
-                0,
-                0
-              ],
-              "lerp_mode": "catmullrom"
-            },
-            "0.44": {
-              "post": [
-                -7.5,
-                0,
-                0
-              ],
-              "lerp_mode": "catmullrom"
-            },
-            "0.88": {
-              "post": [
-                7.5,
-                0,
-                0
-              ],
-              "lerp_mode": "catmullrom"
-            }
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.08": [
+              -35,
+              0,
+              0
+            ],
+            "0.16": [
+              -22.5,
+              0,
+              0
+            ]
+          }
+        },
+        "RightArm": {
+          "rotation": {
+            "0.0": [
+              -70,
+              105,
+              -410
+            ],
+            "0.16": [
+              -70,
+              105,
+              -360
+            ],
+            "0.32": [
+              -92.5,
+              20,
+              -360
+            ]
+          }
+        },
+        "LowerRightArm": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              -7.5
+            ],
+            "0.12": [
+              0,
+              0,
+              -37.5
+            ],
+            "0.28": [
+              0,
+              0,
+              -20
+            ]
           }
         },
         "RightLeg": {
           "rotation": {
-            "0.0": {
+            "0.0": [
+              -37.5,
+              0,
+              0
+            ],
+            "0.52": {
               "post": [
-                -45,
+                37.5,
                 0,
                 0
               ],
               "lerp_mode": "catmullrom"
             },
-            "0.44": {
-              "post": [
-                45,
-                0,
-                0
-              ],
-              "lerp_mode": "catmullrom"
-            },
-            "0.88": {
-              "post": [
-                -45,
-                0,
-                0
-              ],
-              "lerp_mode": "catmullrom"
-            }
+            "1.04": [
+              -37.5,
+              0,
+              0
+            ]
           }
         },
         "LeftLeg": {
           "rotation": {
-            "0.0": {
+            "0.0": [
+              37.5,
+              0,
+              0
+            ],
+            "0.52": {
               "post": [
-                45,
+                -37.5,
                 0,
                 0
               ],
               "lerp_mode": "catmullrom"
             },
-            "0.44": {
+            "1.04": [
+              37.5,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.grolem.new.walk": {
+      "loop": true,
+      "animation_length": 1.04,
+      "bones": {
+        "LeftArm": {
+          "rotation": {
+            "0.0": [
+              10,
+              0,
+              0
+            ],
+            "0.52": {
               "post": [
-                -45,
+                -10,
                 0,
                 0
               ],
               "lerp_mode": "catmullrom"
             },
-            "0.88": {
+            "1.04": [
+              10,
+              0,
+              0
+            ]
+          }
+        },
+        "RightArm": {
+          "rotation": {
+            "0.0": [
+              -10,
+              0,
+              0
+            ],
+            "0.52": {
               "post": [
-                45,
+                10,
                 0,
                 0
               ],
               "lerp_mode": "catmullrom"
-            }
+            },
+            "1.04": [
+              -10,
+              0,
+              0
+            ]
+          }
+        },
+        "RightLeg": {
+          "rotation": {
+            "0.0": [
+              -37.5,
+              0,
+              0
+            ],
+            "0.52": {
+              "post": [
+                37.5,
+                0,
+                0
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "1.04": [
+              -37.5,
+              0,
+              0
+            ]
+          }
+        },
+        "LeftLeg": {
+          "rotation": {
+            "0.0": [
+              37.5,
+              0,
+              0
+            ],
+            "0.52": {
+              "post": [
+                -37.5,
+                0,
+                0
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "1.04": [
+              37.5,
+              0,
+              0
+            ]
           }
         }
       }

@@ -3,74 +3,82 @@
 // Paste this class into your mod and generate all required imports
 
 public static class Modelgrolem extends EntityModel<Entity> {
-	private final ModelRenderer UpperLeftArm;
-	private final ModelRenderer LowerLeftArm;
-	private final ModelRenderer UpperRightArm;
-	private final ModelRenderer LowerRightArm;
-	private final ModelRenderer Head;
-	private final ModelRenderer Body;
-	private final ModelRenderer RightLeg;
+	private final ModelRenderer Grolem;
 	private final ModelRenderer LeftLeg;
+	private final ModelRenderer RightLeg;
+	private final ModelRenderer Body;
+	private final ModelRenderer Head;
+	private final ModelRenderer RightArm;
+	private final ModelRenderer LowerRightArm;
+	private final ModelRenderer LeftArm;
+	private final ModelRenderer LowerLeftArm;
 
 	public Modelgrolem() {
 		textureWidth = 16;
 		textureHeight = 16;
 
-		UpperLeftArm = new ModelRenderer(this);
-		UpperLeftArm.setRotationPoint(1.0F, 18.75F, 1.0F);
-		UpperLeftArm.setTextureOffset(0, 1).addBox(-0.05F, 0.0F, -0.35F, 0.0F, 1.0F, 0.0F, 0.0F, false);
-
-		LowerLeftArm = new ModelRenderer(this);
-		LowerLeftArm.setRotationPoint(0.2336F, 1.25F, -0.295F);
-		UpperLeftArm.addChild(LowerLeftArm);
-		LowerLeftArm.setTextureOffset(0, 1).addBox(-0.1431F, 0.0F, 0.0F, 0.0F, 1.0F, 0.0F, 0.0F, false);
-
-		UpperRightArm = new ModelRenderer(this);
-		UpperRightArm.setRotationPoint(-0.75F, 19.0F, 1.0F);
-		UpperRightArm.setTextureOffset(0, 1).addBox(-0.8F, -0.25F, -0.35F, 0.0F, 1.0F, 0.0F, 0.0F, true);
-
-		LowerRightArm = new ModelRenderer(this);
-		LowerRightArm.setRotationPoint(2.0F, 1.0F, 0.0F);
-		UpperRightArm.addChild(LowerRightArm);
-		LowerRightArm.setTextureOffset(0, 1).addBox(-2.7336F, 0.0F, -0.295F, 0.0F, 1.0F, 0.0F, 0.0F, true);
-
-		Head = new ModelRenderer(this);
-		Head.setRotationPoint(0.0F, 24.0F, 0.0F);
-		Head.setTextureOffset(0, 1).addBox(-0.5F, -6.0F, 0.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-		Head.setTextureOffset(0, 1).addBox(0.0896F, -6.2501F, 0.55F, 0.0F, 1.0F, 0.0F, 0.0F, false);
-		Head.setTextureOffset(0, 1).addBox(-0.35F, -6.2501F, 0.55F, 0.0F, 1.0F, 0.0F, 0.0F, true);
-
-		Body = new ModelRenderer(this);
-		Body.setRotationPoint(0.0F, 24.0F, 0.0F);
-		Body.setTextureOffset(0, 2).addBox(-1.05F, -5.25F, 0.25F, 2.0F, 3.0F, 1.0F, 0.0F, false);
-
-		RightLeg = new ModelRenderer(this);
-		RightLeg.setRotationPoint(-0.75F, 21.75F, 1.0F);
-		RightLeg.setTextureOffset(0, 1).addBox(-0.25F, -0.75F, -0.25F, 0.0F, 2.0F, 0.0F, 0.0F, true);
+		Grolem = new ModelRenderer(this);
+		Grolem.setRotationPoint(0.0F, 24.0F, 0.0F);
 
 		LeftLeg = new ModelRenderer(this);
-		LeftLeg.setRotationPoint(0.75F, 21.75F, 1.0F);
-		LeftLeg.setTextureOffset(0, 1).addBox(-0.25F, -0.75F, -0.25F, 0.0F, 2.0F, 0.0F, 0.0F, false);
+		LeftLeg.setRotationPoint(-3.78F, -5.145F, 0.42F);
+		Grolem.addChild(LeftLeg);
+		LeftLeg.setTextureOffset(0, 0).addBox(1.74F, 1.845F, 1.32F, -4.0F, -1.0F, -4.0F, 3.0F, true);
+
+		RightLeg = new ModelRenderer(this);
+		RightLeg.setRotationPoint(2.625F, -5.145F, 0.42F);
+		Grolem.addChild(RightLeg);
+		RightLeg.setTextureOffset(0, 0).addBox(1.635F, 1.845F, 1.32F, -4.0F, -1.0F, -4.0F, 3.0F, false);
+
+		Body = new ModelRenderer(this);
+		Body.setRotationPoint(-0.63F, -13.335F, 0.0F);
+		Grolem.addChild(Body);
+		Body.setTextureOffset(0, 0).addBox(2.33F, 1.595F, 3.8F, -5.0F, -5.0F, -8.0F, 8.0F, false);
+		Body.setTextureOffset(0, 0).addBox(2.96F, 11.675F, 4.22F, -6.0F, -12.0F, -9.0F, 8.0F, false);
+
+		Head = new ModelRenderer(this);
+		Head.setRotationPoint(0.0F, -19.425F, 0.525F);
+		Grolem.addChild(Head);
+		Head.setTextureOffset(0, 0).addBox(2.64F, 2.745F, 2.955F, -7.0F, -10.0F, -7.0F, 6.0F, false);
+		Head.setTextureOffset(0, 0).addBox(1.0F, -3.935F, -1.205F, -1.0F, 0.0F, -1.0F, 1.0F, false);
+		Head.setTextureOffset(0, 0).addBox(-1.52F, -3.935F, -1.205F, -1.0F, 0.0F, -1.0F, 1.0F, true);
+
+		RightArm = new ModelRenderer(this);
+		RightArm.setRotationPoint(-5.88F, -19.74F, 0.42F);
+		Grolem.addChild(RightArm);
+		RightArm.setTextureOffset(0, 0).addBox(-3.78F, 0.0F, -2.31F, 3.0F, 7.0F, 4.0F, 0.0F, true);
+
+		LowerRightArm = new ModelRenderer(this);
+		LowerRightArm.setRotationPoint(-1.7781F, 7.77F, -0.1239F);
+		RightArm.addChild(LowerRightArm);
+		LowerRightArm.setTextureOffset(0, 0).addBox(-0.9519F, -1.47F, -1.5561F, 2.0F, 7.0F, 2.0F, 0.0F, true);
+
+		LeftArm = new ModelRenderer(this);
+		LeftArm.setRotationPoint(5.355F, -19.425F, 0.315F);
+		Grolem.addChild(LeftArm);
+		LeftArm.setTextureOffset(0, 0).addBox(0.105F, -0.315F, -2.205F, 3.0F, 7.0F, 4.0F, 0.0F, false);
+
+		LowerLeftArm = new ModelRenderer(this);
+		LowerLeftArm.setRotationPoint(1.4631F, 7.56F, -0.0189F);
+		LeftArm.addChild(LowerLeftArm);
+		LowerLeftArm.setTextureOffset(0, 0).addBox(-1.1481F, -1.575F, -1.5561F, 2.0F, 7.0F, 2.0F, 0.0F, false);
+	}
+
+	@Override
+	public void setRotationAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks,
+			float netHeadYaw, float headPitch) {
+		// previously the render function, render code was moved to a method below
 	}
 
 	@Override
 	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red,
 			float green, float blue, float alpha) {
-		UpperLeftArm.render(matrixStack, buffer, packedLight, packedOverlay);
-		UpperRightArm.render(matrixStack, buffer, packedLight, packedOverlay);
-		Head.render(matrixStack, buffer, packedLight, packedOverlay);
-		Body.render(matrixStack, buffer, packedLight, packedOverlay);
-		RightLeg.render(matrixStack, buffer, packedLight, packedOverlay);
-		LeftLeg.render(matrixStack, buffer, packedLight, packedOverlay);
+		Grolem.render(matrixStack, buffer, packedLight, packedOverlay);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
 		modelRenderer.rotateAngleX = x;
 		modelRenderer.rotateAngleY = y;
 		modelRenderer.rotateAngleZ = z;
-	}
-
-	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity e) {
-		super.setRotationAngles(f, f1, f2, f3, f4, f5, e);
 	}
 }
