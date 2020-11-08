@@ -1,0 +1,42 @@
+{
+  "group": "hantai_no_tengoku",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "hantai_no_tengoku:tengoku_infused_diamond"
+    },
+    "1": {
+      "item": "hantai_no_tengoku:tengoku_infused_diamond"
+    },
+    "2": {
+      "item": "hantai_no_tengoku:tengoku_infused_diamond"
+    },
+    "3": {
+      "item": "hantai_no_tengoku:tengoku_infused_diamond"
+    },
+    "4": {
+      "item": "hantai_no_tengoku:tengoku_star"
+    },
+    "5": {
+      "item": "hantai_no_tengoku:tengoku_infused_diamond"
+    },
+    "6": {
+      "item": "hantai_no_tengoku:tengoku_infused_diamond"
+    },
+    "7": {
+      "item": "hantai_no_tengoku:tengoku_full"
+    },
+    "8": {
+      "item": "hantai_no_tengoku:tengoku_infused_diamond"
+    }
+  },
+  "result": {
+    "item": "hantai_no_tengoku:tengoku_blade_blade",
+    "count": 1
+  }
+}
