@@ -24,9 +24,9 @@
     "damageVsEntity": 0.0,
     "bulletPower": 1.0,
     "bulletDamage": 3.9999999999999996,
-    "bulletKnockback": 2,
-    "bulletParticles": false,
-    "bulletIgnitesFire": false,
+    "bulletKnockback": 4,
+    "bulletParticles": true,
+    "bulletIgnitesFire": true,
     "bulletItemTexture": {
       "value": "CUSTOM:DemonItem"
     },

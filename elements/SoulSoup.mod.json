@@ -1,0 +1,27 @@
+{
+  "_fv": 10,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "soul_soup",
+    "customModelName": "Normal",
+    "name": "Soul Soup",
+    "specialInfo": [
+      "Soup From The Souls of the Damned"
+    ],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 7,
+    "saturation": 0.3,
+    "eatingSpeed": 80,
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": true,
+    "onEaten": {
+      "name": "SoulSoupEffects"
+    }
+  }
+}

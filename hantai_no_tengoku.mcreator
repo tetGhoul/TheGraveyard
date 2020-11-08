@@ -251,32 +251,6 @@
       }
     },
     {
-      "name": "DemonBombTestBulletHitsLivingEntity",
-      "type": "procedure",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "demon_bomb_test_bullet_hits_living_entity",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "DemonBombTest",
-      "type": "gun",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "demon_bomb_test"
-    },
-    {
       "name": "DemonBombTestBulletHitsBlock",
       "type": "procedure",
       "sortid": 27,
@@ -306,6 +280,32 @@
       }
     },
     {
+      "name": "DemonBombTestBulletHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_bomb_test_bullet_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DemonBombTest",
+      "type": "gun",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_bomb_test"
+    },
+    {
       "name": "GrolemWalk",
       "type": "procedure",
       "sortid": 28,
@@ -321,6 +321,126 @@
           }
         ]
       }
+    },
+    {
+      "name": "TengokuArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_armor_boots_recipe"
+    },
+    {
+      "name": "TengokuArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_armor_helmet_recipe"
+    },
+    {
+      "name": "TengokuArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_armor_leggings_recipe"
+    },
+    {
+      "name": "TengokuBladeBladeLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_blade_blade_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TengokuArmor",
+      "type": "armor",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "SoulSoupEffects",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soul_soup_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TengokuArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_armor_body_recipe"
+    },
+    {
+      "name": "TengokuBladeBladeRightClickedInAir",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_blade_blade_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SoulSoup",
+      "type": "food",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soul_soup"
+    },
+    {
+      "name": "TengokuBladeBlade",
+      "type": "tool",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_blade_blade"
     }
   ],
   "variable_elements": [],
@@ -333,22 +453,22 @@
       "block.hantai_no_tengoku.tengoku_stone": "Tengoku Stone",
       "item.hantai_no_tengoku.tengoku_infused_diamond": "Tengoku Infused Diamond",
       "block.hantai_no_tengoku.void_soil": "Void Soil",
-      "item.hantai_no_tengoku.souls": "Souls",
       "advancements.goodbye.title": "Goodbye!",
+      "item.hantai_no_tengoku.souls": "Souls",
       "entity.hantai_no_tengoku.grolem": "Grolem",
       "item.hantai_no_tengoku.demon_item": "Demon Item",
-      "advancements.who_are_you.descr": "Entered Limbo",
       "item.hantai_no_tengoku.grolem": "Grolem Spawn Egg",
+      "advancements.who_are_you.descr": "Entered Limbo",
       "item.hantai_no_tengoku.tengoku_ingot": "Tengoku Core",
       "itemGroup.tabhantai_no_tengoku": "Hantai No Tengoku",
       "item.hantai_no_tengoku.void_people": "Void People Spawn Egg",
       "item.hantai_no_tengoku.low_tier_demon": "Low Tier Demon Spawn Egg",
-      "entity.hantai_no_tengoku.low_tier_demon": "Low Tier Demon",
-      "item.hantai_no_tengoku.limbo": "Portal Igniter Essence ",
       "block.hantai_no_tengoku.tengoku_infuser": "Tengoku Infuser",
+      "item.hantai_no_tengoku.limbo": "Portal Igniter Essence ",
+      "entity.hantai_no_tengoku.low_tier_demon": "Low Tier Demon",
       "entity.hantai_no_tengoku.void_people": "Void People",
-      "advancements.who_are_you.title": "Who Are You?",
-      "item.hantai_no_tengoku.demon_bomb_test": "Demon Bomb "
+      "item.hantai_no_tengoku.demon_bomb_test": "Demon Bomb ",
+      "advancements.who_are_you.title": "Who Are You?"
     }
   },
   "workspaceSettings": {
@@ -362,11 +482,8 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [
-      "geckolib"
-    ],
+    "mcreatorDependencies": [],
     "currentGenerator": "forge-1.15.2",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.hantainotengoku",
     "lockBaseModFiles": false
   },

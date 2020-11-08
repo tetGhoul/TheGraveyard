@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "hantai_no_tengoku:items/tengoku_blade"
+  }
+}

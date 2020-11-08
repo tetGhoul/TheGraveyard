@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"2": "Scythe/BlackKindaButNoise",
-		"3": "Scythe/Blade",
+		"2": "Downloads/BlackKindaButNoise",
+		"3": "Downloads/Blade",
 		"particle": "block/BrownMaybe"
 	},
 	"elements": [
