@@ -3,8 +3,6 @@ package net.mcreator.hantainotengoku.procedures;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
 import net.minecraft.entity.Entity;
@@ -29,15 +27,6 @@ public class GrolemWalkProcedure extends HantaiNoTengokuModElements.ModElement {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if ((entity instanceof GrolemEntity.CustomEntity)) {
-			if (entity instanceof IAnimatedEntity) {
-				new Object() {
-					@OnlyIn(Dist.CLIENT)
-					void playAnimation(Entity entity, String animationID) {
-						IAnimatedEntity aniEntity = (IAnimatedEntity) entity;
-						aniEntity.getAnimationManager().get("controller").setAnimation(new AnimationBuilder().addAnimation(animationID, (false)));
-					}
-				}.playAnimation(entity, "grolem.animation.json");
-			}
 		}
 	}
 
