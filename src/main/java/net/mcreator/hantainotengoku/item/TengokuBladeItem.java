@@ -1,12 +1,32 @@
 
 package net.mcreator.hantainotengoku.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Item;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.entity.ai.attributes.AttributeModifier;
+import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.block.BlockState;
+
+import net.mcreator.hantainotengoku.HantaiNoTengokuModElements;
+
+import java.util.List;
+
+import com.google.common.collect.Multimap;
+
 @HantaiNoTengokuModElements.ModElement.Tag
 public class TengokuBladeItem extends HantaiNoTengokuModElements.ModElement {
-
 	@ObjectHolder("hantai_no_tengoku:tengoku_blade")
 	public static final Item block = null;
-
 	public TengokuBladeItem(HantaiNoTengokuModElements instance) {
 		super(instance, 28);
 	}
@@ -15,9 +35,7 @@ public class TengokuBladeItem extends HantaiNoTengokuModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new ItemCustom());
 	}
-
 	public static class ItemCustom extends Item {
-
 		public ItemCustom() {
 			super(new Item.Properties().group(ItemGroup.COMBAT).maxStackSize(12));
 			setRegistryName("tengoku_blade");
@@ -62,7 +80,5 @@ public class TengokuBladeItem extends HantaiNoTengokuModElements.ModElement {
 			list.add(new StringTextComponent("Tengoku Blade"));
 			list.add(new StringTextComponent("Eliminate your Enemies."));
 		}
-
 	}
-
 }

@@ -1,12 +1,25 @@
 
 package net.mcreator.hantainotengoku.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.world.World;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.block.BlockState;
+
+import net.mcreator.hantainotengoku.procedures.DemonBombBulletHitsPlayerProcedure;
+import net.mcreator.hantainotengoku.itemgroup.HantaiNoTengokuItemGroup;
+import net.mcreator.hantainotengoku.HantaiNoTengokuModElements;
+
+import java.util.Map;
+import java.util.HashMap;
+
 @HantaiNoTengokuModElements.ModElement.Tag
 public class DemonItemItem extends HantaiNoTengokuModElements.ModElement {
-
 	@ObjectHolder("hantai_no_tengoku:demon_item")
 	public static final Item block = null;
-
 	public DemonItemItem(HantaiNoTengokuModElements instance) {
 		super(instance, 24);
 	}
@@ -15,9 +28,7 @@ public class DemonItemItem extends HantaiNoTengokuModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new ItemCustom());
 	}
-
 	public static class ItemCustom extends Item {
-
 		public ItemCustom() {
 			super(new Item.Properties().group(HantaiNoTengokuItemGroup.tab).maxStackSize(64));
 			setRegistryName("demon_item");
@@ -47,14 +58,10 @@ public class DemonItemItem extends HantaiNoTengokuModElements.ModElement {
 			World world = entity.world;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-
 				$_dependencies.put("entity", entity);
-
 				DemonBombBulletHitsPlayerProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
 		}
-
 	}
-
 }
