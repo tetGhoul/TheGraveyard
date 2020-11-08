@@ -1,12 +1,24 @@
 
 package net.mcreator.hantainotengoku.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.entity.ai.attributes.AttributeModifier;
+import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.block.BlockState;
+
+import net.mcreator.hantainotengoku.itemgroup.HantaiNoTengokuItemGroup;
+import net.mcreator.hantainotengoku.HantaiNoTengokuModElements;
+
+import com.google.common.collect.Multimap;
+
 @HantaiNoTengokuModElements.ModElement.Tag
 public class DemonEssenceInfusedStickItem extends HantaiNoTengokuModElements.ModElement {
-
 	@ObjectHolder("hantai_no_tengoku:demon_essence_infused_stick")
 	public static final Item block = null;
-
 	public DemonEssenceInfusedStickItem(HantaiNoTengokuModElements instance) {
 		super(instance, 35);
 	}
@@ -15,9 +27,7 @@ public class DemonEssenceInfusedStickItem extends HantaiNoTengokuModElements.Mod
 	public void initElements() {
 		elements.items.add(() -> new ItemCustom());
 	}
-
 	public static class ItemCustom extends Item {
-
 		public ItemCustom() {
 			super(new Item.Properties().group(HantaiNoTengokuItemGroup.tab).maxStackSize(64));
 			setRegistryName("demon_essence_infused_stick");
@@ -49,7 +59,5 @@ public class DemonEssenceInfusedStickItem extends HantaiNoTengokuModElements.Mod
 			}
 			return multimap;
 		}
-
 	}
-
 }
