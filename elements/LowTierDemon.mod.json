@@ -50,7 +50,7 @@
     "movementSpeed": 2.0,
     "armorBaseValue": 3.0,
     "trackingRange": 64,
-    "health": 25,
+    "health": 100,
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": true,
@@ -84,7 +84,7 @@
     "stepSound": {
       "value": ""
     },
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
       "value": "PORTAL"
     },
