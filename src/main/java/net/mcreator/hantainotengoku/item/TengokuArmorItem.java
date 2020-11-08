@@ -41,7 +41,7 @@ public class TengokuArmorItem extends HantaiNoTengokuModElements.ModElement {
 			}
 
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
-				return new int[]{50, 90, 120, 70}[slot.getIndex()];
+				return new int[]{12, 14, 30, 13}[slot.getIndex()];
 			}
 
 			public int getEnchantability() {
