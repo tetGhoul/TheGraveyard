@@ -59,7 +59,7 @@ import net.minecraft.block.BlockState;
 
 import net.mcreator.hantainotengoku.itemgroup.HantaiNoTengokuItemGroup;
 import net.mcreator.hantainotengoku.item.SoulsItem;
-import net.mcreator.hantainotengoku.item.DemonItemItem;
+import net.mcreator.hantainotengoku.item.DemonBombTestItem;
 import net.mcreator.hantainotengoku.HantaiNoTengokuModElements;
 
 import com.mojang.blaze3d.vertex.IVertexBuilder;
@@ -91,7 +91,7 @@ public class LowTierDemonEntity extends HantaiNoTengokuModElements.ModElement {
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
-			biome.getSpawns(EntityClassification.MONSTER).add(new Biome.SpawnListEntry(entity, 2, 1, 1));
+			biome.getSpawns(EntityClassification.MONSTER).add(new Biome.SpawnListEntry(entity, 1, 1, 1));
 		}
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
 				MonsterEntity::canMonsterSpawn);
@@ -179,8 +179,6 @@ public class LowTierDemonEntity extends HantaiNoTengokuModElements.ModElement {
 
 		@Override
 		public boolean attackEntityFrom(DamageSource source, float amount) {
-			if (source == DamageSource.FALL)
-				return false;
 			if (source == DamageSource.DROWN)
 				return false;
 			if (source == DamageSource.LIGHTNING_BOLT)
@@ -241,7 +239,7 @@ public class LowTierDemonEntity extends HantaiNoTengokuModElements.ModElement {
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
 				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(2);
 			if (this.getAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
-				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10);
+				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(25);
 			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)
 				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(3);
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
@@ -316,12 +314,12 @@ public class LowTierDemonEntity extends HantaiNoTengokuModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(DemonItemItem.block, (int) (1));
+			return new ItemStack(DemonBombTestItem.block, (int) (1));
 		}
 
 		@Override
 		protected ItemStack getArrowStack() {
-			return new ItemStack(DemonItemItem.block, (int) (1));
+			return new ItemStack(DemonBombTestItem.block, (int) (1));
 		}
 	}
 

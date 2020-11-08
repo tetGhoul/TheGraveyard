@@ -249,6 +249,61 @@
           }
         ]
       }
+    },
+    {
+      "name": "DemonBombTestBulletHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_bomb_test_bullet_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DemonBombTest",
+      "type": "gun",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_bomb_test"
+    },
+    {
+      "name": "DemonBombTestBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_bomb_test_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -275,7 +330,8 @@
       "item.hantai_no_tengoku.limbo": "Portal Igniter Essence ",
       "block.hantai_no_tengoku.tengoku_infuser": "Tengoku Infuser",
       "entity.hantai_no_tengoku.void_people": "Void People",
-      "advancements.who_are_you.title": "Who Are You?"
+      "advancements.who_are_you.title": "Who Are You?",
+      "item.hantai_no_tengoku.demon_bomb_test": "Demon Bomb "
     }
   },
   "workspaceSettings": {
