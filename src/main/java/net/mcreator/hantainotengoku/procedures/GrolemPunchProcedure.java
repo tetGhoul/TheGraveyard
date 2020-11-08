@@ -1,32 +1,46 @@
 package net.mcreator.hantainotengoku.procedures;
 
+import software.bernie.geckolib.entity.IAnimatedEntity;
+import software.bernie.geckolib.animation.builder.AnimationBuilder;
+
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
+import net.minecraft.entity.passive.GolemEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.hantainotengoku.entity.GrolemEntity;
 import net.mcreator.hantainotengoku.HantaiNoTengokuModElements;
 
 import java.util.Map;
 import java.util.HashMap;
 
 @HantaiNoTengokuModElements.ModElement.Tag
-public class GrolemWalkProcedure extends HantaiNoTengokuModElements.ModElement {
-	public GrolemWalkProcedure(HantaiNoTengokuModElements instance) {
-		super(instance, 28);
+public class GrolemPunchProcedure extends HantaiNoTengokuModElements.ModElement {
+	public GrolemPunchProcedure(HantaiNoTengokuModElements instance) {
+		super(instance, 40);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure GrolemWalk!");
+			System.err.println("Failed to load dependency entity for procedure GrolemPunch!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if ((entity instanceof GrolemEntity.CustomEntity)) {
+		if ((entity instanceof GolemEntity)) {
+			if (entity instanceof IAnimatedEntity) {
+				new Object() {
+					@OnlyIn(Dist.CLIENT)
+					void playAnimation(Entity entity, String animationID) {
+						IAnimatedEntity aniEntity = (IAnimatedEntity) entity;
+						aniEntity.getAnimationManager().get("controller").setAnimation(new AnimationBuilder().addAnimation(animationID, (false)));
+					}
+				}.playAnimation(entity, "grolem.animation.punch");
+			}
 		}
 	}
 
