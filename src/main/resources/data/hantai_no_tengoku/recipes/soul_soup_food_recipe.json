@@ -1,0 +1,19 @@
+{
+  "group": "hantai_no_tengoku",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hantai_no_tengoku:souls"
+    },
+    {
+      "item": "hantai_no_tengoku:bowl_of_ash_item"
+    },
+    {
+      "item": "hantai_no_tengoku:souls"
+    }
+  ],
+  "result": {
+    "item": "hantai_no_tengoku:soul_soup",
+    "count": 1
+  }
+}

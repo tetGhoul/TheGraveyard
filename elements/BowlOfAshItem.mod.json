@@ -3,27 +3,24 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "tengoku_blade",
+    "texture": "bowlofash",
     "customModelName": "Normal",
-    "name": "Tengoku Blade",
+    "name": "Bowl Of Ash Item",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:HantaiNoTengoku"
     },
-    "stackSize": 12,
-    "enchantability": 250,
+    "stackSize": 64,
+    "enchantability": 0,
     "useDuration": 0,
-    "toolType": 20.0,
+    "toolType": 1.0,
     "damageCount": 0,
     "destroyAnyBlock": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "enableMeleeDamage": true,
-    "damageVsEntity": 100.0,
-    "specialInfo": [
-      "Tengoku Blade",
-      "Eliminate your Enemies."
-    ],
-    "hasGlow": true,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [],
+    "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64

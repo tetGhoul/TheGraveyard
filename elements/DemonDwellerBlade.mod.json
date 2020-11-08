@@ -1,0 +1,33 @@
+{
+  "_fv": 10,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "demondwellersword",
+    "customModelName": "Normal",
+    "name": "Demon Dweller Blade",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:HantaiNoTengoku"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 4,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 14.0,
+    "usageCount": 500,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:DemonEssence"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "DemonDwellerBladeLivingEntityIsHitWithTool"
+    }
+  }
+}

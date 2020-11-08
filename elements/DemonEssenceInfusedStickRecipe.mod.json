@@ -1,0 +1,46 @@
+{
+  "_fv": 10,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 2,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DemonEssence"
+      },
+      {
+        "value": "CUSTOM:DemonEssence"
+      },
+      {
+        "value": "CUSTOM:DemonEssence"
+      },
+      {
+        "value": "CUSTOM:DemonEssence"
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": "CUSTOM:DemonEssence"
+      },
+      {
+        "value": "CUSTOM:DemonEssence"
+      },
+      {
+        "value": "CUSTOM:DemonEssence"
+      },
+      {
+        "value": "CUSTOM:DemonEssence"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DemonEssenceInfusedStick"
+    },
+    "name": "demon_essence_infused_stick_recipe",
+    "namespace": "mod"
+  }
+}

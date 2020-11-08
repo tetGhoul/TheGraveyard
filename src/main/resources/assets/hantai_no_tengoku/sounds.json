@@ -1,18 +1,18 @@
 {
-  "maybeishouldntbesoracist": {
-    "category": "music",
-    "sounds": [
-      {
-        "name": "hantai_no_tengoku:lets_go._dodooo_nig",
-        "stream": true
-      }
-    ]
-  },
   "bruh": {
     "category": "music",
     "sounds": [
       {
         "name": "hantai_no_tengoku:bruh_sound_effect_2",
+        "stream": true
+      }
+    ]
+  },
+  "maybeishouldntbesoracist": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "hantai_no_tengoku:lets_go._dodooo_nig",
         "stream": true
       }
     ]
