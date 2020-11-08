@@ -17,5 +17,11 @@ authors="kenzi, MCreator"
     side="BOTH"
 
 
+[[dependencies.hantai_no_tengoku]]
+    modId="mcreator_link"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 

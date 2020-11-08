@@ -1,12 +1,37 @@
 
 package net.mcreator.hantainotengoku.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.Hand;
+import net.minecraft.util.ActionResult;
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.item.IItemTier;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.client.util.ITooltipFlag;
+
+import net.mcreator.hantainotengoku.procedures.TengokuBladeBladeRightClickedInAirProcedure;
+import net.mcreator.hantainotengoku.procedures.TengokuBladeBladeLivingEntityIsHitWithToolProcedure;
+import net.mcreator.hantainotengoku.itemgroup.HantaiNoTengokuItemGroup;
+import net.mcreator.hantainotengoku.HantaiNoTengokuModElements;
+
+import java.util.Map;
+import java.util.List;
+import java.util.HashMap;
+
 @HantaiNoTengokuModElements.ModElement.Tag
 public class TengokuBladeBladeItem extends HantaiNoTengokuModElements.ModElement {
-
 	@ObjectHolder("hantai_no_tengoku:tengoku_blade_blade")
 	public static final Item block = null;
-
 	public TengokuBladeBladeItem(HantaiNoTengokuModElements instance) {
 		super(instance, 31);
 	}
@@ -38,7 +63,6 @@ public class TengokuBladeBladeItem extends HantaiNoTengokuModElements.ModElement
 				return Ingredient.fromStacks(new ItemStack(TengokuInfusedDiamondItem.block, (int) (1)));
 			}
 		}, 3, -1.8f, new Item.Properties().group(HantaiNoTengokuItemGroup.tab)) {
-
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);
@@ -55,9 +79,7 @@ public class TengokuBladeBladeItem extends HantaiNoTengokuModElements.ModElement
 				double z = entity.getPosZ();
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
-
 					$_dependencies.put("entity", entity);
-
 					TengokuBladeBladeRightClickedInAirProcedure.executeProcedure($_dependencies);
 				}
 				return retval;
@@ -72,9 +94,7 @@ public class TengokuBladeBladeItem extends HantaiNoTengokuModElements.ModElement
 				World world = entity.world;
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
-
 					$_dependencies.put("entity", entity);
-
 					TengokuBladeBladeLivingEntityIsHitWithToolProcedure.executeProcedure($_dependencies);
 				}
 				return retval;
@@ -85,8 +105,6 @@ public class TengokuBladeBladeItem extends HantaiNoTengokuModElements.ModElement
 			public boolean hasEffect(ItemStack itemstack) {
 				return true;
 			}
-
 		}.setRegistryName("tengoku_blade_blade"));
 	}
-
 }
