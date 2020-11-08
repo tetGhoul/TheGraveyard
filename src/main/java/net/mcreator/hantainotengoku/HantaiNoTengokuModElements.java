@@ -47,6 +47,10 @@ public class HantaiNoTengokuModElements {
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public HantaiNoTengokuModElements() {
+		sounds.put(new ResourceLocation("hantai_no_tengoku", "bruh"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("hantai_no_tengoku", "bruh")));
+		sounds.put(new ResourceLocation("hantai_no_tengoku", "maybeishouldntbesoracist"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("hantai_no_tengoku", "maybeishouldntbesoracist")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("hantai_no_tengoku").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();
