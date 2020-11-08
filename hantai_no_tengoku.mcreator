@@ -251,32 +251,6 @@
       }
     },
     {
-      "name": "DemonBombTestBulletHitsLivingEntity",
-      "type": "procedure",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "demon_bomb_test_bullet_hits_living_entity",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "DemonBombTest",
-      "type": "gun",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "demon_bomb_test"
-    },
-    {
       "name": "DemonBombTestBulletHitsBlock",
       "type": "procedure",
       "sortid": 27,
@@ -304,6 +278,32 @@
           }
         ]
       }
+    },
+    {
+      "name": "DemonBombTestBulletHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_bomb_test_bullet_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DemonBombTest",
+      "type": "gun",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_bomb_test"
     }
   ],
   "variable_elements": [],
