@@ -216,57 +216,6 @@
       "registry_name": "soul_drop_rate_test"
     },
     {
-      "name": "TengokuArmorBootsRecipe",
-      "type": "recipe",
-      "sortid": 27,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tengoku_armor_boots_recipe"
-    },
-    {
-      "name": "TengokuArmorHelmetRecipe",
-      "type": "recipe",
-      "sortid": 24,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tengoku_armor_helmet_recipe"
-    },
-    {
-      "name": "TengokuArmorLeggingsRecipe",
-      "type": "recipe",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tengoku_armor_leggings_recipe"
-    },
-    {
-      "name": "TengokuArmor",
-      "type": "armor",
-      "sortid": 23,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tengoku_armor",
-      "metadata": {
-        "eh": true,
-        "el": true,
-        "eb": true,
-        "ec": true
-      }
-    },
-    {
-      "name": "TengokuArmorBodyRecipe",
-      "type": "recipe",
-      "sortid": 25,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tengoku_armor_body_recipe"
-    },
-    {
       "name": "Scythe",
       "type": "tool",
       "sortid": 22,
@@ -619,12 +568,9 @@
       "entity.hantai_no_tengoku.void_people": "Void People",
       "item.hantai_no_tengoku.bowl_of_ash_item": "Bowl Of Ash Item",
       "item.hantai_no_tengoku.demon_bomb_test": "Demon Bomb ",
-      "item.hantai_no_tengoku.tengoku_armor_helmet": "Tengoku Helmet",
       "item.hantai_no_tengoku.tengoku_star": "Tengoku Star",
       "item.hantai_no_tengoku.tengoku_full": "Tengoku Full",
-      "item.hantai_no_tengoku.tengoku_armor_boots": "Tengoku Boots",
       "item.hantai_no_tengoku.scythe": "Scythe",
-      "item.hantai_no_tengoku.tengoku_armor_leggings": "Tengoku Leggings",
       "item.hantai_no_tengoku.tengoku_blade": "Tengoku Blade",
       "block.hantai_no_tengoku.tengoku_stone": "Tengoku Stone",
       "item.hantai_no_tengoku.demon_dweller_blade": "Demon Dweller Blade",
@@ -633,7 +579,6 @@
       "item.hantai_no_tengoku.book_of_infinite_knowledge": "Book Of Infinite Knowledge",
       "advancements.who_are_you.descr": "Entered Limbo",
       "item.hantai_no_tengoku.tengoku_ingot": "Tengoku Core",
-      "item.hantai_no_tengoku.tengoku_armor_chestplate": "Tengoku Chestplate",
       "item.hantai_no_tengoku.tengoku_stick_2": "Tengoku Stick 2",
       "item.hantai_no_tengoku.tengoku_stick_1": "Tengoku Stick 1",
       "item.hantai_no_tengoku.low_tier_demon": "Low Tier Demon Spawn Egg",
