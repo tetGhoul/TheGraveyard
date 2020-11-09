@@ -198,15 +198,6 @@
       "registry_name": "tengoku_infuser_gui"
     },
     {
-      "name": "Grolem",
-      "type": "mob",
-      "sortid": 21,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "grolem"
-    },
-    {
       "name": "SoulDropRateTest",
       "type": "loottable",
       "sortid": 22,
@@ -554,7 +545,14 @@
       "registry_name": "demon_staff"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "mana",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "100.0"
+    }
+  ],
   "sound_elements": [
     {
       "name": "bruh",
@@ -578,7 +576,6 @@
       "advancements.goodbye.title": "Goodbye!",
       "item.hantai_no_tengoku.demon_item": "Demon Item",
       "item.hantai_no_tengoku.demon_essence_infused_stick": "Demon Essence Infused Stick",
-      "item.hantai_no_tengoku.grolem": "Grolem Spawn Egg",
       "item.hantai_no_tengoku.demon_essence": "Demon Essence",
       "item.hantai_no_tengoku.soul_soup": "Soul Soup",
       "itemGroup.tabhantai_no_tengoku": "Hantai No Tengoku",
@@ -595,7 +592,6 @@
       "block.hantai_no_tengoku.tengoku_stone": "Tengoku Stone",
       "item.hantai_no_tengoku.demon_dweller_blade": "Demon Dweller Blade",
       "item.hantai_no_tengoku.souls": "Souls",
-      "entity.hantai_no_tengoku.grolem": "Grolem",
       "item.hantai_no_tengoku.book_of_infinite_knowledge": "Book Of Infinite Knowledge",
       "advancements.who_are_you.descr": "Entered Limbo",
       "item.hantai_no_tengoku.tengoku_ingot": "Tengoku Core",
