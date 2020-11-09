@@ -26,7 +26,7 @@ public class DemonEssenceItem extends HantaiNoTengokuModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(HantaiNoTengokuItemGroup.tab).maxStackSize(64));
+			super(new Item.Properties().group(HantaiNoTengokuItemGroup.tab).maxDamage(12));
 			setRegistryName("demon_essence");
 		}
 
