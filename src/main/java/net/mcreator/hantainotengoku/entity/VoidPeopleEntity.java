@@ -95,7 +95,7 @@ public class VoidPeopleEntity extends HantaiNoTengokuModElements.ModElement {
 
 		public CustomEntity(EntityType<CustomEntity> type, World world) {
 			super(type, world);
-			experienceValue = 16;
+			experienceValue = 2;
 			setNoAI(false);
 		}
 
@@ -155,7 +155,7 @@ public class VoidPeopleEntity extends HantaiNoTengokuModElements.ModElement {
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
 				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3);
 			if (this.getAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
-				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(80);
+				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(95);
 			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)
 				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(0);
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
