@@ -1,0 +1,158 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.grolem.walk": {
+			"loop": true,
+			"animation_length": 1.04,
+			"bones": {
+				"LeftLeg": {
+					"rotation": {
+						"0.0": {
+							"vector": [-35, 0, 0]
+						},
+						"0.52": {
+							"vector": [35, 0, 0],
+							"easing": "linear"
+						},
+						"1.0": {
+							"vector": [-35, 0, 0]
+						}
+					}
+				},
+				"RightLeg": {
+					"rotation": {
+						"0.0": {
+							"vector": [35, 0, 0]
+						},
+						"0.52": {
+							"vector": [-35, 0, 0],
+							"easing": "linear"
+						},
+						"1.0": {
+							"vector": [35, 0, 0]
+						}
+					}
+				},
+				"RightArm": {
+					"rotation": {
+						"0.0": {
+							"vector": [15, 0, 0]
+						},
+						"0.52": {
+							"vector": [-15, 0, 0]
+						},
+						"1.0": {
+							"vector": [15, 0, 0]
+						}
+					}
+				},
+				"LeftArm": {
+					"rotation": {
+						"0.0": {
+							"vector": [-15, 0, 0]
+						},
+						"0.52": {
+							"vector": [15, 0, 0],
+							"easing": "linear"
+						},
+						"1.0": {
+							"vector": [-15, 0, 0],
+							"easing": "linear"
+						}
+					}
+				}
+			}
+		},
+		"animation.grolem.right.punch": {
+			"animation_length": 0.76,
+			"bones": {
+				"Body": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 22.5, 0]
+						},
+						"0.28": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"RightArm": {
+					"rotation": {
+						"0.0": {
+							"vector": [-27.5, 57.5, 20]
+						},
+						"0.16": {
+							"vector": [-70, 67.5, 7.5]
+						},
+						"0.36": {
+							"vector": [-87.5, 7.5, 7.5]
+						}
+					}
+				},
+				"LowerRightArm": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, -30]
+						},
+						"0.12": {
+							"vector": [0, 0, -35]
+						},
+						"0.16": {
+							"vector": [0, 0, -12.5]
+						}
+					}
+				},
+				"LeftArm": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, -20, -10]
+						},
+						"0.24": {
+							"vector": [15, -20, -10]
+						}
+					}
+				},
+				"LowerLeftArm": {
+					"rotation": {
+						"0.0": {
+							"vector": [-7.5, 0, 0]
+						},
+						"0.2": {
+							"vector": [-17.5, 0, 0]
+						}
+					}
+				},
+				"Waist": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 7.5, 0]
+						},
+						"0.44": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.grolem.idle": {
+			"loop": true,
+			"animation_length": 2.12,
+			"bones": {
+				"Body": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0.5, 0]
+						},
+						"1.04": {
+							"vector": [0, 0, 0]
+						},
+						"2.08": {
+							"vector": [0, 0.5, 0],
+							"easing": "linear"
+						}
+					}
+				}
+			}
+		}
+	}
+}
