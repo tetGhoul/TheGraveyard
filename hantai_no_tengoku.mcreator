@@ -527,15 +527,6 @@
       "registry_name": "tengoku_full"
     },
     {
-      "name": "TengokuStaff",
-      "type": "gun",
-      "sortid": 47,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tengoku_staff"
-    },
-    {
       "name": "DemonStaff",
       "type": "gun",
       "sortid": 48,
@@ -543,6 +534,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "demon_staff"
+    },
+    {
+      "name": "TengokuStaff",
+      "type": "gun",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tengoku_staff"
+    },
+    {
+      "name": "BookOfAsh",
+      "type": "item",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "book_of_ash"
+    },
+    {
+      "name": "BookOfAshRecipe",
+      "type": "recipe",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "book_of_ash_recipe"
     }
   ],
   "variable_elements": [
@@ -568,11 +586,11 @@
   "language_map": {
     "en_us": {
       "advancements.goodbye.descr": "Leave Limbo ",
-      "item.hantai_no_tengoku.tengoku_staff": "Tengoku Staff",
+      "item.hantai_no_tengoku.tengoku_staff": "Demon Staff",
       "block.hantai_no_tengoku.tengoku_infused_obsidian": "Tengoku Infused Obsidian",
-      "block.hantai_no_tengoku.void_soil": "Void Soil",
-      "item.hantai_no_tengoku.tengoku_infused_diamond": "Tengoku Infused Diamond",
       "item.hantai_no_tengoku.tengoku_blade_blade": "Tengoku Blade ",
+      "item.hantai_no_tengoku.tengoku_infused_diamond": "Tengoku Infused Diamond",
+      "block.hantai_no_tengoku.void_soil": "Void Soil",
       "advancements.goodbye.title": "Goodbye!",
       "item.hantai_no_tengoku.demon_item": "Demon Item",
       "item.hantai_no_tengoku.demon_essence_infused_stick": "Demon Essence Infused Stick",
@@ -588,6 +606,7 @@
       "item.hantai_no_tengoku.tengoku_star": "Tengoku Star",
       "item.hantai_no_tengoku.tengoku_full": "Tengoku Full",
       "item.hantai_no_tengoku.scythe": "Scythe",
+      "item.hantai_no_tengoku.book_of_ash": "Book Of Ash",
       "item.hantai_no_tengoku.tengoku_blade": "Tengoku Blade",
       "block.hantai_no_tengoku.tengoku_stone": "Tengoku Stone",
       "item.hantai_no_tengoku.demon_dweller_blade": "Demon Dweller Blade",

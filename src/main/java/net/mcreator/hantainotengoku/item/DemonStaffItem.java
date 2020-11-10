@@ -69,7 +69,7 @@ public class DemonStaffItem extends HantaiNoTengokuModElements.ModElement {
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
-			super(new Item.Properties().group(HantaiNoTengokuItemGroup.tab).maxDamage(100));
+			super(new Item.Properties().group(HantaiNoTengokuItemGroup.tab).maxStackSize(1));
 			setRegistryName("demon_staff");
 		}
 
@@ -94,7 +94,7 @@ public class DemonStaffItem extends HantaiNoTengokuModElements.ModElement {
 			Multimap<String, AttributeModifier> multimap = super.getAttributeModifiers(slot);
 			if (slot == EquipmentSlotType.MAINHAND) {
 				multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(),
-						new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "ranged_item_damage", (double) -0.8, AttributeModifier.Operation.ADDITION));
+						new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "ranged_item_damage", (double) -2, AttributeModifier.Operation.ADDITION));
 				multimap.put(SharedMonsterAttributes.ATTACK_SPEED.getName(),
 						new AttributeModifier(ATTACK_SPEED_MODIFIER, "ranged_item_attack_speed", -2.4, AttributeModifier.Operation.ADDITION));
 			}
@@ -109,7 +109,7 @@ public class DemonStaffItem extends HantaiNoTengokuModElements.ModElement {
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
 				if (true) {
-					ArrowCustomEntity entityarrow = shoot(world, entity, random, 1f, 5, 5);
+					ArrowCustomEntity entityarrow = shoot(world, entity, random, 0f, 0, 0);
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 					entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
 				}
@@ -192,10 +192,10 @@ public class DemonStaffItem extends HantaiNoTengokuModElements.ModElement {
 		double d0 = target.getPosY() + (double) target.getEyeHeight() - 1.1;
 		double d1 = target.getPosX() - entity.getPosX();
 		double d3 = target.getPosZ() - entity.getPosZ();
-		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1f * 2, 12.0F);
+		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 0f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setDamage(5);
-		entityarrow.setKnockbackStrength(5);
+		entityarrow.setDamage(0);
+		entityarrow.setKnockbackStrength(0);
 		entityarrow.setIsCritical(false);
 		entity.world.addEntity(entityarrow);
 		double x = entity.getPosX();
