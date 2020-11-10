@@ -565,10 +565,22 @@
   ],
   "variable_elements": [
     {
-      "name": "mana",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "100.0"
+      "name": "idle",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "walking",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "attacking",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
     }
   ],
   "sound_elements": [
