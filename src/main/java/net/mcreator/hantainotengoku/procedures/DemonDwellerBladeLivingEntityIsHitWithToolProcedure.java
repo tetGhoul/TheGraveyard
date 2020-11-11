@@ -12,7 +12,7 @@ import java.util.Map;
 @HantaiNoTengokuModElements.ModElement.Tag
 public class DemonDwellerBladeLivingEntityIsHitWithToolProcedure extends HantaiNoTengokuModElements.ModElement {
 	public DemonDwellerBladeLivingEntityIsHitWithToolProcedure(HantaiNoTengokuModElements instance) {
-		super(instance, 38);
+		super(instance, 54);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

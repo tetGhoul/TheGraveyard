@@ -50,7 +50,7 @@ public class DemonStaffItem extends HantaiNoTengokuModElements.ModElement {
 	@ObjectHolder("hantai_no_tengoku:entitybulletdemon_staff")
 	public static final EntityType arrow = null;
 	public DemonStaffItem(HantaiNoTengokuModElements instance) {
-		super(instance, 48);
+		super(instance, 18);
 	}
 
 	@Override

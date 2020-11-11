@@ -16,7 +16,7 @@ import java.util.Map;
 @HantaiNoTengokuModElements.ModElement.Tag
 public class LimboPlayerEntersDimensionProcedure extends HantaiNoTengokuModElements.ModElement {
 	public LimboPlayerEntersDimensionProcedure(HantaiNoTengokuModElements instance) {
-		super(instance, 9);
+		super(instance, 39);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

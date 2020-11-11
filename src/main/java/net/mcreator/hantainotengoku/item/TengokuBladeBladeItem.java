@@ -2,8 +2,6 @@
 package net.mcreator.hantainotengoku.item;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
 import net.minecraft.util.text.StringTextComponent;
@@ -33,7 +31,7 @@ public class TengokuBladeBladeItem extends HantaiNoTengokuModElements.ModElement
 	@ObjectHolder("hantai_no_tengoku:tengoku_blade_blade")
 	public static final Item block = null;
 	public TengokuBladeBladeItem(HantaiNoTengokuModElements instance) {
-		super(instance, 31);
+		super(instance, 15);
 	}
 
 	@Override
@@ -98,12 +96,6 @@ public class TengokuBladeBladeItem extends HantaiNoTengokuModElements.ModElement
 					TengokuBladeBladeLivingEntityIsHitWithToolProcedure.executeProcedure($_dependencies);
 				}
 				return retval;
-			}
-
-			@Override
-			@OnlyIn(Dist.CLIENT)
-			public boolean hasEffect(ItemStack itemstack) {
-				return true;
 			}
 		}.setRegistryName("tengoku_blade_blade"));
 	}

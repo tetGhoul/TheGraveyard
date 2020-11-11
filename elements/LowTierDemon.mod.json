@@ -88,7 +88,7 @@
     "particleToSpawn": {
       "value": "PORTAL"
     },
-    "particleSpawningShape": "Spread",
+    "particleSpawningShape": "Top",
     "particleSpawningRadious": 0.8000000014901161,
     "particleAmount": 8,
     "hasAI": true,
@@ -105,7 +105,7 @@
     "rangedAttackItem": {
       "value": "CUSTOM:DemonBombTest"
     },
-    "rangedItemType": "Default item",
+    "rangedItemType": "DemonBombTest",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 1,

@@ -11,7 +11,7 @@ import java.util.Map;
 @HantaiNoTengokuModElements.ModElement.Tag
 public class DemonBombTestBulletHitsBlockProcedure extends HantaiNoTengokuModElements.ModElement {
 	public DemonBombTestBulletHitsBlockProcedure(HantaiNoTengokuModElements instance) {
-		super(instance, 27);
+		super(instance, 49);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -36,7 +36,7 @@ public class DemonBombTestBulletHitsBlockProcedure extends HantaiNoTengokuModEle
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (world instanceof World && !world.getWorld().isRemote) {
-			world.getWorld().createExplosion(null, (int) x, (int) y, (int) z, (float) 4, Explosion.Mode.BREAK);
+			world.getWorld().createExplosion(null, (int) x, (int) y, (int) z, (float) 2, Explosion.Mode.BREAK);
 		}
 	}
 }

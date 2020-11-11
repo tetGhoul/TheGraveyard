@@ -1,0 +1,47 @@
+{
+  "_fv": 10,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "download",
+    "customModelName": "Normal",
+    "name": "Grimoire Of The Sins: Lightning",
+    "specialInfo": [
+      "Rumored to have been created by the original sins with variants"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:HantaiNoTengoku"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 1.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "CUSTOM:DemonItem"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "LightningStrikeGrimoire"
+    },
+    "onBulletHitsPlayer": {
+      "name": "LightningStrikeGrimoire"
+    },
+    "onBulletHitsEntity": {
+      "name": "LightningStrikeGrimoire"
+    }
+  }
+}

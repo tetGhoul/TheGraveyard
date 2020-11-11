@@ -46,7 +46,7 @@ public class TengokuInfuserGUIGui extends HantaiNoTengokuModElements.ModElement 
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
 	public TengokuInfuserGUIGui(HantaiNoTengokuModElements instance) {
-		super(instance, 18);
+		super(instance, 46);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,

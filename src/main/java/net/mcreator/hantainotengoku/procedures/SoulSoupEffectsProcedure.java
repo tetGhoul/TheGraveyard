@@ -12,7 +12,7 @@ import java.util.Map;
 @HantaiNoTengokuModElements.ModElement.Tag
 public class SoulSoupEffectsProcedure extends HantaiNoTengokuModElements.ModElement {
 	public SoulSoupEffectsProcedure(HantaiNoTengokuModElements instance) {
-		super(instance, 30);
+		super(instance, 51);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

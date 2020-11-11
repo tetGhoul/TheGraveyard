@@ -21,7 +21,7 @@ public class BookOfAshItem extends HantaiNoTengokuModElements.ModElement {
 	@ObjectHolder("hantai_no_tengoku:book_of_ash")
 	public static final Item block = null;
 	public BookOfAshItem(HantaiNoTengokuModElements instance) {
-		super(instance, 50);
+		super(instance, 31);
 	}
 
 	@Override

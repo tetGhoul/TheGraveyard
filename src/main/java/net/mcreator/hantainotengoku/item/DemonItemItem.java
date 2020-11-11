@@ -21,7 +21,7 @@ public class DemonItemItem extends HantaiNoTengokuModElements.ModElement {
 	@ObjectHolder("hantai_no_tengoku:demon_item")
 	public static final Item block = null;
 	public DemonItemItem(HantaiNoTengokuModElements instance) {
-		super(instance, 24);
+		super(instance, 13);
 	}
 
 	@Override

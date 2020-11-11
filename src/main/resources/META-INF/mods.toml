@@ -7,7 +7,7 @@ version="1.0.0"
 displayName="Hantai No Tengoku"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
-authors="kenzi, MCreator"
+authors="tetghoul"
 
 [[dependencies.hantai_no_tengoku]]
     modId="minecraft"

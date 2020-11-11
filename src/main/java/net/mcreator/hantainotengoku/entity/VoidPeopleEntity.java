@@ -46,7 +46,7 @@ import net.mcreator.hantainotengoku.HantaiNoTengokuModElements;
 public class VoidPeopleEntity extends HantaiNoTengokuModElements.ModElement {
 	public static EntityType entity = null;
 	public VoidPeopleEntity(HantaiNoTengokuModElements instance) {
-		super(instance, 12);
+		super(instance, 7);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

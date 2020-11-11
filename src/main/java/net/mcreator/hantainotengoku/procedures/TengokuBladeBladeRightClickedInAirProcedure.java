@@ -12,7 +12,7 @@ import java.util.Map;
 @HantaiNoTengokuModElements.ModElement.Tag
 public class TengokuBladeBladeRightClickedInAirProcedure extends HantaiNoTengokuModElements.ModElement {
 	public TengokuBladeBladeRightClickedInAirProcedure(HantaiNoTengokuModElements instance) {
-		super(instance, 31);
+		super(instance, 57);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

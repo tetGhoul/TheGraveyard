@@ -23,7 +23,7 @@ public class TengokuInfusedDiamondItem extends HantaiNoTengokuModElements.ModEle
 	@ObjectHolder("hantai_no_tengoku:tengoku_infused_diamond")
 	public static final Item block = null;
 	public TengokuInfusedDiamondItem(HantaiNoTengokuModElements instance) {
-		super(instance, 4);
+		super(instance, 2);
 	}
 
 	@Override

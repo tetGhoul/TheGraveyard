@@ -23,7 +23,7 @@ public class TengokuStick1Item extends HantaiNoTengokuModElements.ModElement {
 	@ObjectHolder("hantai_no_tengoku:tengoku_stick_1")
 	public static final Item block = null;
 	public TengokuStick1Item(HantaiNoTengokuModElements instance) {
-		super(instance, 40);
+		super(instance, 21);
 	}
 
 	@Override

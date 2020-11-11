@@ -108,7 +108,7 @@ public class LimboDimension extends HantaiNoTengokuModElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public LimboDimension(HantaiNoTengokuModElements instance) {
-		super(instance, 12);
+		super(instance, 10);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

@@ -1,0 +1,16 @@
+{
+  "group": "hantai_no_tengoku",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hantai_no_tengoku:demon_essence"
+    },
+    {
+      "item": "hantai_no_tengoku:book_of_ash"
+    }
+  ],
+  "result": {
+    "item": "hantai_no_tengoku:empty_grimoire_of_sin",
+    "count": 1
+  }
+}

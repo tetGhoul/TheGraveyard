@@ -1,0 +1,33 @@
+{
+  "_fv": 10,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "download",
+    "customModelName": "Normal",
+    "name": "Grimoire Of The Sins: Beasts",
+    "creativeTab": {
+      "value": "CUSTOM:HantaiNoTengoku"
+    },
+    "stackSize": 16,
+    "enchantability": 0,
+    "useDuration": 8,
+    "toolType": 1.0,
+    "damageCount": 8,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Rumored to have been created by the original sins with variants"
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "SummonHellhoundsCommand"
+    }
+  }
+}

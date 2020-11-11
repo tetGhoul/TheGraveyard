@@ -1,7 +1,6 @@
 
 package net.mcreator.hantainotengoku.entity;
 
-import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.network.FMLPlayMessages;
@@ -16,7 +15,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
-import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Hand;
@@ -27,7 +25,6 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.entity.projectile.AbstractArrowEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.monster.MonsterEntity;
@@ -43,7 +40,6 @@ import net.minecraft.entity.ai.goal.FollowOwnerGoal;
 import net.minecraft.entity.ai.controller.FlyingMovementController;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.IRendersAsItem;
 import net.minecraft.entity.IRangedAttackMob;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
@@ -53,9 +49,7 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.entity.AgeableEntity;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
-import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraft.client.renderer.entity.MobRenderer;
-import net.minecraft.client.Minecraft;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.hantainotengoku.itemgroup.HantaiNoTengokuItemGroup;
@@ -71,10 +65,8 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 @HantaiNoTengokuModElements.ModElement.Tag
 public class LowTierDemonEntity extends HantaiNoTengokuModElements.ModElement {
 	public static EntityType entity = null;
-	@ObjectHolder("hantai_no_tengoku:entitybulletlow_tier_demon")
-	public static final EntityType arrow = null;
 	public LowTierDemonEntity(HantaiNoTengokuModElements instance) {
-		super(instance, 7);
+		super(instance, 6);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -86,9 +78,6 @@ public class LowTierDemonEntity extends HantaiNoTengokuModElements.ModElement {
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -14869990, -16777216, new Item.Properties().group(HantaiNoTengokuItemGroup.tab))
 				.setRegistryName("low_tier_demon"));
-		elements.entities.add(() -> (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
-				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-				.size(0.5f, 0.5f)).build("entitybulletlow_tier_demon").setRegistryName("entitybulletlow_tier_demon"));
 	}
 
 	@Override
@@ -111,8 +100,6 @@ public class LowTierDemonEntity extends HantaiNoTengokuModElements.ModElement {
 				}
 			};
 		});
-		RenderingRegistry.registerEntityRenderingHandler(arrow,
-				renderManager -> new SpriteRenderer(renderManager, Minecraft.getInstance().getItemRenderer()));
 	}
 	public static class CustomEntity extends TameableEntity implements IRangedAttackMob {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
@@ -254,12 +241,7 @@ public class LowTierDemonEntity extends HantaiNoTengokuModElements.ModElement {
 		}
 
 		public void attackEntityWithRangedAttack(LivingEntity target, float flval) {
-			ArrowCustomEntity entityarrow = new ArrowCustomEntity(arrow, this, this.world);
-			double d0 = target.getPosY() + (double) target.getEyeHeight() - 1.1;
-			double d1 = target.getPosX() - this.getPosX();
-			double d3 = target.getPosZ() - this.getPosZ();
-			entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1.6F, 12.0F);
-			world.addEntity(entityarrow);
+			DemonBombTestItem.shoot(this, target);
 		}
 
 		@Override
@@ -295,50 +277,11 @@ public class LowTierDemonEntity extends HantaiNoTengokuModElements.ModElement {
 			Entity entity = this;
 			if (true)
 				for (int l = 0; l < 8; ++l) {
-					double d0 = (x + random.nextFloat());
-					double d1 = (y + random.nextFloat());
-					double d2 = (z + random.nextFloat());
-					int i1 = random.nextInt(2) * 2 - 1;
-					double d3 = (random.nextFloat() - 0.5D) * 0.8000000014901161D;
-					double d4 = (random.nextFloat() - 0.5D) * 0.8000000014901161D;
-					double d5 = (random.nextFloat() - 0.5D) * 0.8000000014901161D;
-					world.addParticle(ParticleTypes.PORTAL, d0, d1, d2, d3, d4, d5);
+					double d0 = (double) ((float) x + 0.5) + (double) (random.nextFloat() - 0.5) * 0.8000000014901161D;
+					double d1 = ((double) ((float) y + 0.7) + (double) (random.nextFloat() - 0.5) * 0.8000000014901161D) + 0.5;
+					double d2 = (double) ((float) z + 0.5) + (double) (random.nextFloat() - 0.5) * 0.8000000014901161D;
+					world.addParticle(ParticleTypes.PORTAL, d0, d1, d2, 0, 0, 0);
 				}
-		}
-	}
-
-	@OnlyIn(value = Dist.CLIENT, _interface = IRendersAsItem.class)
-	private static class ArrowCustomEntity extends AbstractArrowEntity implements IRendersAsItem {
-		public ArrowCustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
-			super(arrow, world);
-		}
-
-		public ArrowCustomEntity(EntityType<? extends ArrowCustomEntity> type, World world) {
-			super(type, world);
-		}
-
-		public ArrowCustomEntity(EntityType<? extends ArrowCustomEntity> type, double x, double y, double z, World world) {
-			super(type, x, y, z, world);
-		}
-
-		public ArrowCustomEntity(EntityType<? extends ArrowCustomEntity> type, LivingEntity entity, World world) {
-			super(type, entity, world);
-		}
-
-		@Override
-		public IPacket<?> createSpawnPacket() {
-			return NetworkHooks.getEntitySpawningPacket(this);
-		}
-
-		@Override
-		@OnlyIn(Dist.CLIENT)
-		public ItemStack getItem() {
-			return new ItemStack(DemonBombTestItem.block, (int) (1));
-		}
-
-		@Override
-		protected ItemStack getArrowStack() {
-			return new ItemStack(DemonBombTestItem.block, (int) (1));
 		}
 	}
 

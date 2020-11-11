@@ -23,7 +23,7 @@ public class DemonDwellerBladeItem extends HantaiNoTengokuModElements.ModElement
 	@ObjectHolder("hantai_no_tengoku:demon_dweller_blade")
 	public static final Item block = null;
 	public DemonDwellerBladeItem(HantaiNoTengokuModElements instance) {
-		super(instance, 38);
+		super(instance, 16);
 	}
 
 	@Override

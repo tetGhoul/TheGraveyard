@@ -44,7 +44,7 @@ public class LimboBiomeBiome extends HantaiNoTengokuModElements.ModElement {
 	@ObjectHolder("hantai_no_tengoku:limbo_biome")
 	public static final CustomBiome biome = null;
 	public LimboBiomeBiome(HantaiNoTengokuModElements instance) {
-		super(instance, 12);
+		super(instance, 42);
 	}
 
 	@Override

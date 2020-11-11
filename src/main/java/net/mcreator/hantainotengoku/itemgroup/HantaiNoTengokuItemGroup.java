@@ -13,7 +13,7 @@ import net.mcreator.hantainotengoku.HantaiNoTengokuModElements;
 @HantaiNoTengokuModElements.ModElement.Tag
 public class HantaiNoTengokuItemGroup extends HantaiNoTengokuModElements.ModElement {
 	public HantaiNoTengokuItemGroup(HantaiNoTengokuModElements instance) {
-		super(instance, 2);
+		super(instance, 36);
 	}
 
 	@Override

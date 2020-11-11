@@ -9,7 +9,7 @@ import java.util.Map;
 @HantaiNoTengokuModElements.ModElement.Tag
 public class DemonBombTestBulletHitsLivingEntityProcedure extends HantaiNoTengokuModElements.ModElement {
 	public DemonBombTestBulletHitsLivingEntityProcedure(HantaiNoTengokuModElements instance) {
-		super(instance, 26);
+		super(instance, 50);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

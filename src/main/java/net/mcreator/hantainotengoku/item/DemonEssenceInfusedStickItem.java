@@ -20,7 +20,7 @@ public class DemonEssenceInfusedStickItem extends HantaiNoTengokuModElements.Mod
 	@ObjectHolder("hantai_no_tengoku:demon_essence_infused_stick")
 	public static final Item block = null;
 	public DemonEssenceInfusedStickItem(HantaiNoTengokuModElements instance) {
-		super(instance, 35);
+		super(instance, 19);
 	}
 
 	@Override

@@ -24,7 +24,7 @@ public class ScytheItem extends HantaiNoTengokuModElements.ModElement {
 	@ObjectHolder("hantai_no_tengoku:scythe")
 	public static final Item block = null;
 	public ScytheItem(HantaiNoTengokuModElements instance) {
-		super(instance, 22);
+		super(instance, 12);
 	}
 
 	@Override

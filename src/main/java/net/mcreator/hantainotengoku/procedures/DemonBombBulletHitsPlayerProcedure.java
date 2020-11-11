@@ -10,7 +10,7 @@ import java.util.Map;
 @HantaiNoTengokuModElements.ModElement.Tag
 public class DemonBombBulletHitsPlayerProcedure extends HantaiNoTengokuModElements.ModElement {
 	public DemonBombBulletHitsPlayerProcedure(HantaiNoTengokuModElements instance) {
-		super(instance, 25);
+		super(instance, 48);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

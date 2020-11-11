@@ -28,7 +28,7 @@ public class SoulSoupItem extends HantaiNoTengokuModElements.ModElement {
 	@ObjectHolder("hantai_no_tengoku:soul_soup")
 	public static final Item block = null;
 	public SoulSoupItem(HantaiNoTengokuModElements instance) {
-		super(instance, 29);
+		super(instance, 34);
 	}
 
 	@Override

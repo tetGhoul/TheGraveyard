@@ -23,7 +23,7 @@ public class BookOfInfiniteKnowledgeItem extends HantaiNoTengokuModElements.ModE
 	@ObjectHolder("hantai_no_tengoku:book_of_infinite_knowledge")
 	public static final Item block = null;
 	public BookOfInfiniteKnowledgeItem(HantaiNoTengokuModElements instance) {
-		super(instance, 46);
+		super(instance, 24);
 	}
 
 	@Override

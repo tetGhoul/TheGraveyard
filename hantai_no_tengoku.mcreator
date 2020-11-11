@@ -4,7 +4,7 @@
     {
       "name": "TengokuIngot",
       "type": "item",
-      "sortid": 1,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -13,7 +13,7 @@
     {
       "name": "HantaiNoTengoku",
       "type": "tab",
-      "sortid": 2,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -22,7 +22,7 @@
     {
       "name": "TengokuCore",
       "type": "block",
-      "sortid": 3,
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -31,7 +31,7 @@
     {
       "name": "TengokuInfusedDiamond",
       "type": "item",
-      "sortid": 4,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -40,7 +40,7 @@
     {
       "name": "TengokuDiamonds",
       "type": "recipe",
-      "sortid": 5,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -49,7 +49,7 @@
     {
       "name": "Souls",
       "type": "item",
-      "sortid": 6,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -58,7 +58,7 @@
     {
       "name": "LowTierDemon",
       "type": "mob",
-      "sortid": 7,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -67,7 +67,7 @@
     {
       "name": "HowToGetTengokuCore",
       "type": "recipe",
-      "sortid": 8,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -76,7 +76,7 @@
     {
       "name": "LimboPlayerEntersDimension",
       "type": "procedure",
-      "sortid": 9,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -93,7 +93,7 @@
     {
       "name": "LimboPlayerLeavesDimension",
       "type": "procedure",
-      "sortid": 10,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -110,7 +110,7 @@
     {
       "name": "TengokuInfusedObsidian",
       "type": "block",
-      "sortid": 11,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -119,7 +119,7 @@
     {
       "name": "TengokuInfusedObsidien",
       "type": "recipe",
-      "sortid": 11,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -128,7 +128,7 @@
     {
       "name": "VoidPeople",
       "type": "mob",
-      "sortid": 12,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -137,7 +137,7 @@
     {
       "name": "VoidSoil",
       "type": "block",
-      "sortid": 13,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -146,7 +146,7 @@
     {
       "name": "LimboBiome",
       "type": "biome",
-      "sortid": 12,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -155,7 +155,7 @@
     {
       "name": "Limbo",
       "type": "dimension",
-      "sortid": 12,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -164,7 +164,7 @@
     {
       "name": "Igniter",
       "type": "recipe",
-      "sortid": 14,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -173,7 +173,7 @@
     {
       "name": "WhoAreYou",
       "type": "achievement",
-      "sortid": 16,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -182,7 +182,7 @@
     {
       "name": "Goodbye",
       "type": "achievement",
-      "sortid": 17,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -191,7 +191,7 @@
     {
       "name": "TengokuInfuserGUI",
       "type": "gui",
-      "sortid": 18,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -200,7 +200,7 @@
     {
       "name": "SoulDropRateTest",
       "type": "loottable",
-      "sortid": 22,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -209,7 +209,7 @@
     {
       "name": "Scythe",
       "type": "tool",
-      "sortid": 22,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -218,7 +218,7 @@
     {
       "name": "DemonBombBulletHitsPlayer",
       "type": "procedure",
-      "sortid": 25,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -235,7 +235,7 @@
     {
       "name": "DemonItem",
       "type": "item",
-      "sortid": 24,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -244,7 +244,7 @@
     {
       "name": "DemonBombTestBulletHitsBlock",
       "type": "procedure",
-      "sortid": 27,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -273,7 +273,7 @@
     {
       "name": "DemonBombTestBulletHitsLivingEntity",
       "type": "procedure",
-      "sortid": 26,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -290,7 +290,7 @@
     {
       "name": "DemonBombTest",
       "type": "gun",
-      "sortid": 26,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -299,7 +299,7 @@
     {
       "name": "SoulSoup",
       "type": "food",
-      "sortid": 29,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -308,7 +308,7 @@
     {
       "name": "SoulSoupEffects",
       "type": "procedure",
-      "sortid": 30,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -325,7 +325,7 @@
     {
       "name": "DemonEssenceInfusedStick",
       "type": "item",
-      "sortid": 35,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -334,7 +334,7 @@
     {
       "name": "DemonEssenceInfusedStickRecipe",
       "type": "recipe",
-      "sortid": 35,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -343,7 +343,7 @@
     {
       "name": "TengokuBladeBladeLivingEntityIsHitWithTool",
       "type": "procedure",
-      "sortid": 32,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -360,7 +360,7 @@
     {
       "name": "DemonDwellerBladeLivingEntityIsHitWithTool",
       "type": "procedure",
-      "sortid": 38,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -377,7 +377,7 @@
     {
       "name": "DemonEssence",
       "type": "item",
-      "sortid": 33,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -386,7 +386,7 @@
     {
       "name": "DemonDwellerBladeRecipe",
       "type": "recipe",
-      "sortid": 39,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -395,7 +395,7 @@
     {
       "name": "BowlOfAshItem",
       "type": "item",
-      "sortid": 36,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -404,7 +404,7 @@
     {
       "name": "TengokuBladeBlade",
       "type": "tool",
-      "sortid": 31,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -413,7 +413,7 @@
     {
       "name": "DemonDwellerBlade",
       "type": "tool",
-      "sortid": 38,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -422,7 +422,7 @@
     {
       "name": "SoulSoupFoodRecipe",
       "type": "recipe",
-      "sortid": 37,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -431,7 +431,7 @@
     {
       "name": "TengokuBladeBladeRightClickedInAir",
       "type": "procedure",
-      "sortid": 31,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -448,7 +448,7 @@
     {
       "name": "BowlOfAsh",
       "type": "recipe",
-      "sortid": 36,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -457,7 +457,7 @@
     {
       "name": "LowTierDemonEssenceDropRate",
       "type": "loottable",
-      "sortid": 34,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -466,7 +466,7 @@
     {
       "name": "BookOfInfiniteKnowledge",
       "type": "item",
-      "sortid": 46,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -475,7 +475,7 @@
     {
       "name": "TengokuStar",
       "type": "item",
-      "sortid": 43,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -484,7 +484,7 @@
     {
       "name": "TengokuStick",
       "type": "recipe",
-      "sortid": 44,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -493,7 +493,7 @@
     {
       "name": "TengokuBladeRecipe",
       "type": "recipe",
-      "sortid": 45,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -502,7 +502,7 @@
     {
       "name": "TengokuStick1",
       "type": "item",
-      "sortid": 40,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -511,7 +511,7 @@
     {
       "name": "TengokuStick2",
       "type": "item",
-      "sortid": 41,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -520,7 +520,7 @@
     {
       "name": "TengokuFull",
       "type": "item",
-      "sortid": 42,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -529,7 +529,7 @@
     {
       "name": "DemonStaff",
       "type": "gun",
-      "sortid": 48,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -538,7 +538,7 @@
     {
       "name": "TengokuStaff",
       "type": "gun",
-      "sortid": 49,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -547,7 +547,7 @@
     {
       "name": "BookOfAsh",
       "type": "item",
-      "sortid": 50,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -556,11 +556,273 @@
     {
       "name": "BookOfAshRecipe",
       "type": "recipe",
-      "sortid": 50,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "book_of_ash_recipe"
+    },
+    {
+      "name": "LightningStrikeGrimoire",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lightning_strike_grimoire",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BlackPlagueBulletHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_plague_bullet_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BlackDeath",
+      "type": "item",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_death"
+    },
+    {
+      "name": "GrimoireOfTheSinsBlackDeath",
+      "type": "gun",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "grimoire_of_the_sins_black_death"
+    },
+    {
+      "name": "Hellhound",
+      "type": "mob",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hellhound"
+    },
+    {
+      "name": "SummonHellhoundsCommand",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "summon_hellhounds_command",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SummonHellhounds",
+      "type": "command",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "summon_hellhounds"
+    },
+    {
+      "name": "GrimoireOfTheSinsBeasts",
+      "type": "item",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "grimoire_of_the_sins_beasts"
+    },
+    {
+      "name": "GrimoireOfTheSinsInvisibilityRightClickedInAir",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "grimoire_of_the_sins_invisibility_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GrimoireOfTheSinsInvisibilityLivingEntityIsHitWithItem",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "grimoire_of_the_sins_invisibility_living_entity_is_hit_with_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GrimoireOfTheSinsInvisibility",
+      "type": "item",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "grimoire_of_the_sins_invisibility"
+    },
+    {
+      "name": "GrimoireOfTheSinsLightning",
+      "type": "gun",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "grimoire_of_the_sins_lightning"
+    },
+    {
+      "name": "BookOfBenevolence",
+      "type": "item",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "book_of_benevolence"
+    },
+    {
+      "name": "ItemStuff",
+      "type": "recipe",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "item_stuff"
+    },
+    {
+      "name": "EmptyTengokuGrimoire",
+      "type": "item",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "empty_tengoku_grimoire"
+    },
+    {
+      "name": "EmptyTengokuGrimoireRecipe",
+      "type": "recipe",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "empty_tengoku_grimoire_recipe"
+    },
+    {
+      "name": "EmptyGrimoireOfSin",
+      "type": "item",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "empty_grimoire_of_sin"
+    },
+    {
+      "name": "RecipeEmptyGrimoireOfSin",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipe_empty_grimoire_of_sin"
     }
   ],
   "variable_elements": [
@@ -597,17 +859,21 @@
   ],
   "language_map": {
     "en_us": {
+      "item.hantai_no_tengoku.grimoire_of_the_sins_black_death": "Grimoire Of The Sins: Black Death",
       "advancements.goodbye.descr": "Leave Limbo ",
       "item.hantai_no_tengoku.tengoku_staff": "Demon Staff",
+      "item.hantai_no_tengoku.empty_tengoku_grimoire": "Empty Tengoku Grimoire",
       "block.hantai_no_tengoku.tengoku_infused_obsidian": "Tengoku Infused Obsidian",
       "item.hantai_no_tengoku.tengoku_blade_blade": "Tengoku Blade ",
       "item.hantai_no_tengoku.tengoku_infused_diamond": "Tengoku Infused Diamond",
       "block.hantai_no_tengoku.void_soil": "Void Soil",
       "advancements.goodbye.title": "Goodbye!",
+      "item.hantai_no_tengoku.grimoire_of_the_sins_invisibility": "Grimoire Of The Sins: Invisibility",
       "item.hantai_no_tengoku.demon_item": "Demon Item",
       "item.hantai_no_tengoku.demon_essence_infused_stick": "Demon Essence Infused Stick",
       "item.hantai_no_tengoku.demon_essence": "Demon Essence",
       "item.hantai_no_tengoku.soul_soup": "Soul Soup",
+      "entity.hantai_no_tengoku.hellhound": "Hellhound",
       "itemGroup.tabhantai_no_tengoku": "Hantai No Tengoku",
       "item.hantai_no_tengoku.void_people": "Void People Spawn Egg",
       "item.hantai_no_tengoku.demon_staff": "Demon Staff",
@@ -615,30 +881,36 @@
       "entity.hantai_no_tengoku.void_people": "Void People",
       "item.hantai_no_tengoku.bowl_of_ash_item": "Bowl Of Ash Item",
       "item.hantai_no_tengoku.demon_bomb_test": "Demon Bomb ",
+      "item.hantai_no_tengoku.hellhound": "Hellhound Spawn Egg",
       "item.hantai_no_tengoku.tengoku_star": "Tengoku Star",
       "item.hantai_no_tengoku.tengoku_full": "Tengoku Full",
       "item.hantai_no_tengoku.scythe": "Scythe",
+      "item.hantai_no_tengoku.grimoire_of_the_sins_beasts": "Grimoire Of The Sins: Beasts",
       "item.hantai_no_tengoku.book_of_ash": "Book Of Ash",
       "item.hantai_no_tengoku.tengoku_blade": "Tengoku Blade",
+      "item.hantai_no_tengoku.grimoire_of_the_sins_lightning": "Grimoire Of The Sins: Lightning",
       "block.hantai_no_tengoku.tengoku_stone": "Tengoku Stone",
       "item.hantai_no_tengoku.demon_dweller_blade": "Demon Dweller Blade",
       "item.hantai_no_tengoku.souls": "Souls",
       "item.hantai_no_tengoku.book_of_infinite_knowledge": "Book Of Infinite Knowledge",
+      "item.hantai_no_tengoku.book_of_benevolence": "Book Of Benevolence",
       "advancements.who_are_you.descr": "Entered Limbo",
       "item.hantai_no_tengoku.tengoku_ingot": "Tengoku Core",
+      "item.hantai_no_tengoku.black_death": "Black Death",
       "item.hantai_no_tengoku.tengoku_stick_2": "Tengoku Stick 2",
       "item.hantai_no_tengoku.tengoku_stick_1": "Tengoku Stick 1",
       "item.hantai_no_tengoku.low_tier_demon": "Low Tier Demon Spawn Egg",
       "item.hantai_no_tengoku.limbo": "Portal Igniter Essence ",
       "entity.hantai_no_tengoku.low_tier_demon": "Low Tier Demon",
-      "advancements.who_are_you.title": "Who Are You?"
+      "advancements.who_are_you.title": "Who Are You?",
+      "item.hantai_no_tengoku.empty_grimoire_of_sin": "Empty Grimoire Of Sin"
     }
   },
   "workspaceSettings": {
     "modid": "hantai_no_tengoku",
     "modName": "Hantai No Tengoku",
     "version": "1.0.0",
-    "author": "kenzi, MCreator",
+    "author": "tetghoul",
     "websiteURL": "https://mcreator.net",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,

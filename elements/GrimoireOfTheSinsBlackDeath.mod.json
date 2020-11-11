@@ -1,0 +1,47 @@
+{
+  "_fv": 10,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "download",
+    "customModelName": "Normal",
+    "name": "Grimoire Of The Sins: Black Death",
+    "specialInfo": [
+      "Rumored to have been created by the original sins with variants"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:HantaiNoTengoku"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 6,
+    "actionSound": {
+      "value": "entity.phantom.ambient"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 0.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:BlackDeath"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "BlackPlagueBulletHitsLivingEntity"
+    },
+    "onBulletHitsPlayer": {
+      "name": "BlackPlagueBulletHitsLivingEntity"
+    },
+    "onBulletHitsEntity": {
+      "name": "BlackPlagueBulletHitsLivingEntity"
+    }
+  }
+}

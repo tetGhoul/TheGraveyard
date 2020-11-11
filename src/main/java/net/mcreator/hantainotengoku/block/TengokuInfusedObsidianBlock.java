@@ -31,7 +31,7 @@ public class TengokuInfusedObsidianBlock extends HantaiNoTengokuModElements.ModE
 	@ObjectHolder("hantai_no_tengoku:tengoku_infused_obsidian")
 	public static final Block block = null;
 	public TengokuInfusedObsidianBlock(HantaiNoTengokuModElements instance) {
-		super(instance, 11);
+		super(instance, 9);
 	}
 
 	@Override

@@ -29,7 +29,7 @@ public class VoidSoilBlock extends HantaiNoTengokuModElements.ModElement {
 	@ObjectHolder("hantai_no_tengoku:void_soil")
 	public static final Block block = null;
 	public VoidSoilBlock(HantaiNoTengokuModElements instance) {
-		super(instance, 13);
+		super(instance, 11);
 	}
 
 	@Override
