@@ -25,6 +25,8 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.entity.projectile.PotionEntity;
+import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.monster.MonsterEntity;
@@ -169,6 +171,14 @@ public class LowTierDemonEntity extends HantaiNoTengokuModElements.ModElement {
 
 		@Override
 		public boolean attackEntityFrom(DamageSource source, float amount) {
+			if (source.getImmediateSource() instanceof ArrowEntity)
+				return false;
+			if (source.getImmediateSource() instanceof PotionEntity)
+				return false;
+			if (source == DamageSource.FALL)
+				return false;
+			if (source == DamageSource.CACTUS)
+				return false;
 			if (source == DamageSource.DROWN)
 				return false;
 			if (source == DamageSource.LIGHTNING_BOLT)

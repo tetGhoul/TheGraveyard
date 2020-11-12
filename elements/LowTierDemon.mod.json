@@ -62,12 +62,12 @@
     "canControlForward": false,
     "canControlStrafe": false,
     "immuneToFire": true,
-    "immuneToArrows": false,
-    "immuneToFallDamage": false,
-    "immuneToCactus": false,
+    "immuneToArrows": true,
+    "immuneToFallDamage": true,
+    "immuneToCactus": true,
     "immuneToDrowning": true,
     "immuneToLightning": true,
-    "immuneToPotions": false,
+    "immuneToPotions": true,
     "immuneToPlayer": false,
     "mobDrop": {
       "value": ""

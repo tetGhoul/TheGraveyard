@@ -29,6 +29,9 @@
     "onRightClickedInAir": {
       "name": "GrimoireOfTheSinsInvisibilityRightClickedInAir"
     },
+    "onRightClickedOnBlock": {
+      "name": "GrimoireOfTheSinsInvisibilityRightClickedInAir"
+    },
     "onEntityHitWith": {
       "name": "GrimoireOfTheSinsInvisibilityLivingEntityIsHitWithItem"
     }
