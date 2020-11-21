@@ -17,6 +17,9 @@
  */
 package net.mcreator.hantainotengoku;
 
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 import net.minecraftforge.fml.network.simple.SimpleChannel;
 import net.minecraftforge.fml.network.NetworkRegistry;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -41,6 +44,7 @@ import java.util.function.Supplier;
 
 @Mod("hantai_no_tengoku")
 public class HantaiNoTengokuMod {
+	public static final Logger LOGGER = LogManager.getLogger(HantaiNoTengokuMod.class);
 	private static final String PROTOCOL_VERSION = "1";
 	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(
 			new ResourceLocation("hantai_no_tengoku", "hantai_no_tengoku"), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals,
