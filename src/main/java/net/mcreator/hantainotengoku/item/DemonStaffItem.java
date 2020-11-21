@@ -21,12 +21,9 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.UseAction;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.ai.attributes.AttributeModifier;
-import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.IRendersAsItem;
 import net.minecraft.entity.EntityType;
@@ -40,8 +37,6 @@ import net.mcreator.hantainotengoku.itemgroup.HantaiNoTengokuItemGroup;
 import net.mcreator.hantainotengoku.HantaiNoTengokuModElements;
 
 import java.util.Random;
-
-import com.google.common.collect.Multimap;
 
 @HantaiNoTengokuModElements.ModElement.Tag
 public class DemonStaffItem extends HantaiNoTengokuModElements.ModElement {
@@ -74,31 +69,19 @@ public class DemonStaffItem extends HantaiNoTengokuModElements.ModElement {
 		}
 
 		@Override
-		public UseAction getUseAction(ItemStack stack) {
-			return UseAction.BOW;
-		}
-
-		@Override
 		public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
 			entity.setActiveHand(hand);
 			return new ActionResult(ActionResultType.SUCCESS, entity.getHeldItem(hand));
 		}
 
 		@Override
-		public int getUseDuration(ItemStack itemstack) {
-			return 72000;
+		public UseAction getUseAction(ItemStack itemstack) {
+			return UseAction.BOW;
 		}
 
 		@Override
-		public Multimap<String, AttributeModifier> getAttributeModifiers(EquipmentSlotType slot) {
-			Multimap<String, AttributeModifier> multimap = super.getAttributeModifiers(slot);
-			if (slot == EquipmentSlotType.MAINHAND) {
-				multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(),
-						new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "ranged_item_damage", (double) -2, AttributeModifier.Operation.ADDITION));
-				multimap.put(SharedMonsterAttributes.ATTACK_SPEED.getName(),
-						new AttributeModifier(ATTACK_SPEED_MODIFIER, "ranged_item_attack_speed", -2.4, AttributeModifier.Operation.ADDITION));
-			}
-			return multimap;
+		public int getUseDuration(ItemStack itemstack) {
+			return 72000;
 		}
 
 		@Override

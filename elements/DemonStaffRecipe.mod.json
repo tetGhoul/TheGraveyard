@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GrimoireOfTheSinsBlackDeath"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GrimoireOfTheSinsLightning"
+      },
+      {
+        "value": "CUSTOM:UnpoweredStaff"
+      },
+      {
+        "value": "CUSTOM:GrimoireOfTheSinsBeasts"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GrimoireOfTheSinsInvisibility"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DemonStaff"
+    },
+    "name": "demon_staff_recipe",
+    "namespace": "mod"
+  }
+}
