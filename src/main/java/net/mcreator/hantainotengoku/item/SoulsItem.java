@@ -8,6 +8,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.World;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -37,7 +38,7 @@ public class SoulsItem extends HantaiNoTengokuModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(HantaiNoTengokuItemGroup.tab).maxStackSize(32));
+			super(new Item.Properties().group(HantaiNoTengokuItemGroup.tab).maxStackSize(32).rarity(Rarity.COMMON));
 			setRegistryName("souls");
 		}
 

@@ -11,6 +11,8 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
@@ -29,14 +31,19 @@ import net.minecraft.entity.IRendersAsItem;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.block.Blocks;
 
+import net.mcreator.hantainotengoku.procedures.DemonStaffBulletHitsBlockProcedure;
 import net.mcreator.hantainotengoku.itemgroup.HantaiNoTengokuItemGroup;
 import net.mcreator.hantainotengoku.HantaiNoTengokuModElements;
 
 import java.util.Random;
+import java.util.Map;
+import java.util.List;
+import java.util.HashMap;
 
 @HantaiNoTengokuModElements.ModElement.Tag
 public class DemonStaffItem extends HantaiNoTengokuModElements.ModElement {
@@ -45,7 +52,7 @@ public class DemonStaffItem extends HantaiNoTengokuModElements.ModElement {
 	@ObjectHolder("hantai_no_tengoku:entitybulletdemon_staff")
 	public static final EntityType arrow = null;
 	public DemonStaffItem(HantaiNoTengokuModElements instance) {
-		super(instance, 18);
+		super(instance, 17);
 	}
 
 	@Override
@@ -64,7 +71,7 @@ public class DemonStaffItem extends HantaiNoTengokuModElements.ModElement {
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
-			super(new Item.Properties().group(HantaiNoTengokuItemGroup.tab).maxStackSize(1));
+			super(new Item.Properties().group(HantaiNoTengokuItemGroup.tab).maxDamage(125));
 			setRegistryName("demon_staff");
 		}
 
@@ -72,6 +79,12 @@ public class DemonStaffItem extends HantaiNoTengokuModElements.ModElement {
 		public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
 			entity.setActiveHand(hand);
 			return new ActionResult(ActionResultType.SUCCESS, entity.getHeldItem(hand));
+		}
+
+		@Override
+		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
+			super.addInformation(itemstack, world, list, flag);
+			list.add(new StringTextComponent("The staff that brought the destruction of Heaven"));
 		}
 
 		@Override
@@ -92,7 +105,7 @@ public class DemonStaffItem extends HantaiNoTengokuModElements.ModElement {
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
 				if (true) {
-					ArrowCustomEntity entityarrow = shoot(world, entity, random, 0f, 0, 0);
+					ArrowCustomEntity entityarrow = shoot(world, entity, random, 2f, 0, 0);
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 					entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
 				}
@@ -135,9 +148,40 @@ public class DemonStaffItem extends HantaiNoTengokuModElements.ModElement {
 		}
 
 		@Override
+		public void onCollideWithPlayer(PlayerEntity entity) {
+			super.onCollideWithPlayer(entity);
+			Entity sourceentity = this.getShooter();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			World world = this.world;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				DemonStaffBulletHitsBlockProcedure.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
 		protected void arrowHit(LivingEntity entity) {
 			super.arrowHit(entity);
 			entity.setArrowCountInEntity(entity.getArrowCountInEntity() - 1);
+			Entity sourceentity = this.getShooter();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			World world = this.world;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				DemonStaffBulletHitsBlockProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override
@@ -149,6 +193,14 @@ public class DemonStaffItem extends HantaiNoTengokuModElements.ModElement {
 			World world = this.world;
 			Entity entity = this.getShooter();
 			if (this.inGround) {
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
+					DemonStaffBulletHitsBlockProcedure.executeProcedure($_dependencies);
+				}
 				this.remove();
 			}
 		}
@@ -165,7 +217,7 @@ public class DemonStaffItem extends HantaiNoTengokuModElements.ModElement {
 		double y = entity.getPosY();
 		double z = entity.getPosZ();
 		world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")),
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.firecharge.use")),
 				SoundCategory.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
@@ -175,7 +227,7 @@ public class DemonStaffItem extends HantaiNoTengokuModElements.ModElement {
 		double d0 = target.getPosY() + (double) target.getEyeHeight() - 1.1;
 		double d1 = target.getPosX() - entity.getPosX();
 		double d3 = target.getPosZ() - entity.getPosZ();
-		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 0f * 2, 12.0F);
+		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 2f * 2, 12.0F);
 		entityarrow.setSilent(true);
 		entityarrow.setDamage(0);
 		entityarrow.setKnockbackStrength(0);
@@ -185,7 +237,7 @@ public class DemonStaffItem extends HantaiNoTengokuModElements.ModElement {
 		double y = entity.getPosY();
 		double z = entity.getPosZ();
 		entity.world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")),
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.firecharge.use")),
 				SoundCategory.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}

@@ -6,6 +6,7 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraft.world.World;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.client.util.ITooltipFlag;
@@ -21,7 +22,7 @@ public class BookOfAshItem extends HantaiNoTengokuModElements.ModElement {
 	@ObjectHolder("hantai_no_tengoku:book_of_ash")
 	public static final Item block = null;
 	public BookOfAshItem(HantaiNoTengokuModElements instance) {
-		super(instance, 31);
+		super(instance, 32);
 	}
 
 	@Override
@@ -30,7 +31,7 @@ public class BookOfAshItem extends HantaiNoTengokuModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(HantaiNoTengokuItemGroup.tab).maxStackSize(64));
+			super(new Item.Properties().group(HantaiNoTengokuItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("book_of_ash");
 		}
 

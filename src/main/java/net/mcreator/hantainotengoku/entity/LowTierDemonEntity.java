@@ -79,7 +79,7 @@ public class LowTierDemonEntity extends HantaiNoTengokuModElements.ModElement {
 						.build("low_tier_demon").setRegistryName("low_tier_demon");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -14869990, -16777216, new Item.Properties().group(HantaiNoTengokuItemGroup.tab))
-				.setRegistryName("low_tier_demon"));
+				.setRegistryName("low_tier_demon_spawn_egg"));
 	}
 
 	@Override
@@ -143,10 +143,6 @@ public class LowTierDemonEntity extends HantaiNoTengokuModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override

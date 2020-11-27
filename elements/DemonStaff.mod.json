@@ -6,7 +6,9 @@
     "texture": "demonstaff",
     "customModelName": "Normal",
     "name": "Calamity Staff",
-    "specialInfo": [],
+    "specialInfo": [
+      "The staff that brought the destruction of Heaven"
+    ],
     "creativeTab": {
       "value": "CUSTOM:HantaiNoTengoku"
     },
@@ -15,15 +17,15 @@
       "value": ""
     },
     "shootConstantly": false,
-    "usageCount": 0,
+    "usageCount": 125,
     "actionSound": {
-      "value": "entity.player.levelup"
+      "value": "item.firecharge.use"
     },
     "hasGlow": false,
     "animation": "bow",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "bulletPower": 0.0,
+    "bulletPower": 2.0,
     "bulletDamage": 0.0,
     "bulletKnockback": 0,
     "bulletParticles": false,
@@ -32,6 +34,15 @@
       "value": "Blocks.AIR"
     },
     "bulletModel": "Default",
-    "customBulletModelTexture": ""
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "DemonStaffBulletHitsBlock"
+    },
+    "onBulletHitsPlayer": {
+      "name": "DemonStaffBulletHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "DemonStaffBulletHitsBlock"
+    }
   }
 }

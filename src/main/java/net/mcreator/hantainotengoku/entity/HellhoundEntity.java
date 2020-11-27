@@ -1,11 +1,6 @@
 
 package net.mcreator.hantainotengoku.entity;
 
-import software.bernie.geckolib.manager.EntityAnimationManager;
-import software.bernie.geckolib.event.AnimationTestEvent;
-import software.bernie.geckolib.entity.IAnimatedEntity;
-import software.bernie.geckolib.animation.controller.EntityAnimationController;
-
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.network.FMLPlayMessages;
@@ -104,20 +99,7 @@ public class HellhoundEntity extends HantaiNoTengokuModElements.ModElement {
 			};
 		});
 	}
-	public static class CustomEntity extends TameableEntity implements IAnimatedEntity {
-		EntityAnimationManager manager = new EntityAnimationManager();
-		EntityAnimationController controller = new EntityAnimationController(this, "controller", 1, this::animationPredicate);
-		private <E extends Entity> boolean animationPredicate(AnimationTestEvent<E> event) {
-			controller.transitionLengthTicks = 1;
-			controller.markNeedsReload();
-			return true;
-		}
-
-		@Override
-		public EntityAnimationManager getAnimationManager() {
-			return manager;
-		}
-
+	public static class CustomEntity extends TameableEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -126,7 +108,6 @@ public class HellhoundEntity extends HantaiNoTengokuModElements.ModElement {
 			super(type, world);
 			experienceValue = 3;
 			setNoAI(false);
-			manager.addAnimationController(controller);
 		}
 
 		@Override

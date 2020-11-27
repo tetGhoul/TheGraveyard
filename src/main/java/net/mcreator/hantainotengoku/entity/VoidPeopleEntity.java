@@ -57,7 +57,7 @@ public class VoidPeopleEntity extends HantaiNoTengokuModElements.ModElement {
 						.build("void_people").setRegistryName("void_people");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -12638719, -16777216, new Item.Properties().group(HantaiNoTengokuItemGroup.tab))
-				.setRegistryName("void_people"));
+				.setRegistryName("void_people_spawn_egg"));
 	}
 
 	@Override
@@ -119,10 +119,6 @@ public class VoidPeopleEntity extends HantaiNoTengokuModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override

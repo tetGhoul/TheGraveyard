@@ -1,0 +1,25 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:GrimoireOfTheSinsBlackDeath"
+      },
+      {
+        "value": "CUSTOM:GrimoireOfTheSinsBeasts"
+      },
+      {
+        "value": "CUSTOM:GrimoireOfTheSinsInvisibility"
+      },
+      {
+        "value": "CUSTOM:GrimoireOfTheSinsLightning"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "grimoire_group",
+    "namespace": "mod"
+  }
+}

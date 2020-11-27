@@ -72,14 +72,14 @@ public class DemonBombTestItem extends HantaiNoTengokuModElements.ModElement {
 		}
 
 		@Override
-		public UseAction getUseAction(ItemStack stack) {
-			return UseAction.BOW;
-		}
-
-		@Override
 		public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
 			entity.setActiveHand(hand);
 			return new ActionResult(ActionResultType.SUCCESS, entity.getHeldItem(hand));
+		}
+
+		@Override
+		public UseAction getUseAction(ItemStack itemstack) {
+			return UseAction.BOW;
 		}
 
 		@Override
@@ -207,7 +207,6 @@ public class DemonBombTestItem extends HantaiNoTengokuModElements.ModElement {
 		entityarrow.setIsCritical(true);
 		entityarrow.setDamage(damage);
 		entityarrow.setKnockbackStrength(knockback);
-		entityarrow.setFire(100);
 		world.addEntity(entityarrow);
 		double x = entity.getPosX();
 		double y = entity.getPosY();
@@ -228,7 +227,6 @@ public class DemonBombTestItem extends HantaiNoTengokuModElements.ModElement {
 		entityarrow.setDamage(1);
 		entityarrow.setKnockbackStrength(2);
 		entityarrow.setIsCritical(true);
-		entityarrow.setFire(100);
 		entity.world.addEntity(entityarrow);
 		double x = entity.getPosX();
 		double y = entity.getPosY();

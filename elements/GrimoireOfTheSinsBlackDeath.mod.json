@@ -1,5 +1,5 @@
 {
-  "_fv": 10,
+  "_fv": 13,
   "_type": "gun",
   "definition": {
     "renderType": 0,
@@ -22,6 +22,7 @@
       "value": "entity.phantom.ambient"
     },
     "hasGlow": false,
+    "animation": "bow",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "bulletPower": 1.0,
@@ -34,11 +35,8 @@
     },
     "bulletModel": "Default",
     "customBulletModelTexture": "",
-    "onBulletHitsBlock": {
-      "name": "BlackPlagueBulletHitsLivingEntity"
-    },
     "onBulletHitsPlayer": {
-      "name": "BlackPlagueBulletHitsLivingEntity"
+      "name": "GrimoireOfTheSinsBlackDeathBulletHitsPlayer"
     },
     "onBulletHitsEntity": {
       "name": "BlackPlagueBulletHitsLivingEntity"

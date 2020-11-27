@@ -299,7 +299,7 @@
     {
       "name": "SoulSoup",
       "type": "food",
-      "sortid": 34,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -529,25 +529,16 @@
     {
       "name": "DemonStaff",
       "type": "gun",
-      "sortid": 18,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "demon_staff"
     },
     {
-      "name": "TengokuStaff",
-      "type": "gun",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tengoku_staff"
-    },
-    {
       "name": "BookOfAsh",
       "type": "item",
-      "sortid": 31,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -610,20 +601,8 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
+            "name": "sourceentity",
+            "type": "entity"
           }
         ]
       }
@@ -640,7 +619,7 @@
     {
       "name": "GrimoireOfTheSinsBlackDeath",
       "type": "gun",
-      "sortid": 27,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -684,7 +663,7 @@
     {
       "name": "GrimoireOfTheSinsBeasts",
       "type": "item",
-      "sortid": 28,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -739,7 +718,7 @@
     {
       "name": "GrimoireOfTheSinsInvisibility",
       "type": "item",
-      "sortid": 29,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -748,7 +727,7 @@
     {
       "name": "GrimoireOfTheSinsLightning",
       "type": "gun",
-      "sortid": 30,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -757,7 +736,7 @@
     {
       "name": "BookOfBenevolence",
       "type": "item",
-      "sortid": 32,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -775,7 +754,7 @@
     {
       "name": "EmptyTengokuGrimoire",
       "type": "item",
-      "sortid": 33,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -811,7 +790,7 @@
     {
       "name": "UnpoweredStaff",
       "type": "tool",
-      "sortid": 72,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -825,6 +804,158 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "demon_staff_recipe"
+    },
+    {
+      "name": "WorkStationRecipe",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "work_station_recipe",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WorkstationGUI",
+      "type": "gui",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "workstation_gui"
+    },
+    {
+      "name": "StuffOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stuff_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GrimoireGroup",
+      "type": "tag",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "grimoire_group"
+    },
+    {
+      "name": "GrimoireSpawn",
+      "type": "loottable",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "grimoire_spawn"
+    },
+    {
+      "name": "UnpoweredStaffRecipe",
+      "type": "recipe",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "unpowered_staff_recipe"
+    },
+    {
+      "name": "DemonStaffBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_staff_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GrimoireOfTheSinsBlackDeathBulletHitsPlayer",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "grimoire_of_the_sins_black_death_bullet_hits_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -865,41 +996,22 @@
   ],
   "language_map": {
     "en_us": {
-      "item.hantai_no_tengoku.grimoire_of_the_sins_black_death": "Grimoire Of The Sins: Black Death",
-      "advancements.goodbye.descr": "Leave Limbo ",
-      "item.hantai_no_tengoku.tengoku_staff": "Demon Staff",
-      "item.hantai_no_tengoku.empty_tengoku_grimoire": "Empty Tengoku Grimoire",
       "block.hantai_no_tengoku.tengoku_infused_obsidian": "Tengoku Infused Obsidian",
-      "item.hantai_no_tengoku.tengoku_blade_blade": "Tengoku Blade ",
-      "item.hantai_no_tengoku.tengoku_infused_diamond": "Tengoku Infused Diamond",
-      "block.hantai_no_tengoku.void_soil": "Void Soil",
-      "advancements.goodbye.title": "Goodbye!",
-      "item.hantai_no_tengoku.grimoire_of_the_sins_invisibility": "Grimoire Of The Sins: Invisibility",
-      "item.hantai_no_tengoku.demon_item": "Demon Item",
-      "item.hantai_no_tengoku.demon_essence_infused_stick": "Demon Essence Infused Stick",
+      "item.hantai_no_tengoku.low_tier_demon_spawn_egg": "Low Tier Demon Spawn Egg",
       "item.hantai_no_tengoku.demon_essence": "Demon Essence",
-      "item.hantai_no_tengoku.soul_soup": "Soul Soup",
-      "entity.hantai_no_tengoku.hellhound": "Hellhound",
       "item.hantai_no_tengoku.hellhound_spawn_egg": "Hellhound Spawn Egg",
-      "itemGroup.tabhantai_no_tengoku": "Hantai No Tengoku",
       "item.hantai_no_tengoku.void_people": "Void People Spawn Egg",
       "item.hantai_no_tengoku.demon_staff": "Calamity Staff",
       "block.hantai_no_tengoku.tengoku_infuser": "Tengoku Infuser",
       "entity.hantai_no_tengoku.void_people": "Void People",
       "item.hantai_no_tengoku.bowl_of_ash_item": "Bowl Of Ash Item",
       "item.hantai_no_tengoku.demon_bomb_test": "Demon Bomb ",
-      "item.hantai_no_tengoku.hellhound": "Hellhound Spawn Egg",
       "item.hantai_no_tengoku.tengoku_star": "Tengoku Star",
-      "item.hantai_no_tengoku.unpowered_staff": "Unpowered Staff",
       "item.hantai_no_tengoku.tengoku_full": "Tengoku Full",
-      "item.hantai_no_tengoku.scythe": "Scythe",
       "item.hantai_no_tengoku.grimoire_of_the_sins_beasts": "Grimoire Of The Sins: Beasts",
-      "item.hantai_no_tengoku.book_of_ash": "Book Of Ash",
       "item.hantai_no_tengoku.tengoku_blade": "Tengoku Blade",
-      "item.hantai_no_tengoku.grimoire_of_the_sins_lightning": "Grimoire Of The Sins: Lightning",
       "block.hantai_no_tengoku.tengoku_stone": "Tengoku Stone",
       "item.hantai_no_tengoku.demon_dweller_blade": "Demon Dweller Blade",
-      "item.hantai_no_tengoku.souls": "Souls",
       "item.hantai_no_tengoku.book_of_infinite_knowledge": "Book Of Infinite Knowledge",
       "item.hantai_no_tengoku.book_of_benevolence": "Book Of Benevolence",
       "advancements.who_are_you.descr": "Entered Limbo",
@@ -907,11 +1019,32 @@
       "item.hantai_no_tengoku.black_death": "Black Death",
       "item.hantai_no_tengoku.tengoku_stick_2": "Tengoku Stick 2",
       "item.hantai_no_tengoku.tengoku_stick_1": "Tengoku Stick 1",
+      "entity.hantai_no_tengoku.low_tier_demon": "Low Tier Demon",
+      "item.hantai_no_tengoku.empty_grimoire_of_sin": "Empty Grimoire Of Sin",
+      "item.hantai_no_tengoku.grimoire_of_the_sins_black_death": "Grimoire Of The Sins: Black Death",
+      "advancements.goodbye.descr": "Leave Limbo ",
+      "item.hantai_no_tengoku.empty_tengoku_grimoire": "Empty Tengoku Grimoire",
+      "item.hantai_no_tengoku.tengoku_blade_blade": "Tengoku Blade ",
+      "item.hantai_no_tengoku.tengoku_infused_diamond": "Tengoku Infused Diamond",
+      "block.hantai_no_tengoku.void_soil": "Void Soil",
+      "advancements.goodbye.title": "Goodbye!",
+      "item.hantai_no_tengoku.grimoire_of_the_sins_invisibility": "Grimoire Of The Sins: Invisibility",
+      "item.hantai_no_tengoku.demon_item": "Demon Item",
+      "item.hantai_no_tengoku.demon_essence_infused_stick": "Demon Essence Infused Stick",
+      "item.hantai_no_tengoku.soul_soup": "Soul Soup",
+      "entity.hantai_no_tengoku.hellhound": "Hellhound",
+      "itemGroup.tabhantai_no_tengoku": "Hantai No Tengoku",
+      "item.hantai_no_tengoku.hellhound": "Hellhound Spawn Egg",
+      "item.hantai_no_tengoku.unpowered_staff": "Unpowered Staff",
+      "item.hantai_no_tengoku.scythe": "Scythe",
+      "item.hantai_no_tengoku.book_of_ash": "Book Of Ash",
+      "item.hantai_no_tengoku.grimoire_of_the_sins_lightning": "Grimoire Of The Sins: Lightning",
+      "item.hantai_no_tengoku.souls": "Souls",
+      "biome.hantai_no_tengoku.limbo_biome": "Limbo Biome",
+      "item.hantai_no_tengoku.void_people_spawn_egg": "Void People Spawn Egg",
       "item.hantai_no_tengoku.low_tier_demon": "Low Tier Demon Spawn Egg",
       "item.hantai_no_tengoku.limbo": "Portal Igniter Essence ",
-      "entity.hantai_no_tengoku.low_tier_demon": "Low Tier Demon",
-      "advancements.who_are_you.title": "Who Are You?",
-      "item.hantai_no_tengoku.empty_grimoire_of_sin": "Empty Grimoire Of Sin"
+      "advancements.who_are_you.title": "Who Are You?"
     }
   },
   "workspaceSettings": {
@@ -925,13 +1058,11 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [
-      "geckolib"
-    ],
+    "mcreatorDependencies": [],
     "currentGenerator": "forge-1.15.2",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.hantainotengoku",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000432115
+  "mcreatorVersion": 202000547520
 }

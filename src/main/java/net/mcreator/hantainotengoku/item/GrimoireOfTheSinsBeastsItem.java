@@ -8,6 +8,7 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.Hand;
 import net.minecraft.util.ActionResult;
+import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
@@ -27,7 +28,7 @@ public class GrimoireOfTheSinsBeastsItem extends HantaiNoTengokuModElements.ModE
 	@ObjectHolder("hantai_no_tengoku:grimoire_of_the_sins_beasts")
 	public static final Item block = null;
 	public GrimoireOfTheSinsBeastsItem(HantaiNoTengokuModElements instance) {
-		super(instance, 28);
+		super(instance, 29);
 	}
 
 	@Override
@@ -36,7 +37,7 @@ public class GrimoireOfTheSinsBeastsItem extends HantaiNoTengokuModElements.ModE
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(HantaiNoTengokuItemGroup.tab).maxDamage(8));
+			super(new Item.Properties().group(HantaiNoTengokuItemGroup.tab).maxDamage(8).rarity(Rarity.COMMON));
 			setRegistryName("grimoire_of_the_sins_beasts");
 		}
 

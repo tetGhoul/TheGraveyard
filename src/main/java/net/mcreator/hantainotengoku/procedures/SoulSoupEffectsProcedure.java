@@ -17,7 +17,8 @@ public class SoulSoupEffectsProcedure extends HantaiNoTengokuModElements.ModElem
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure SoulSoupEffects!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure SoulSoupEffects!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

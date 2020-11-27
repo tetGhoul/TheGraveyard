@@ -35,6 +35,7 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.hantainotengoku.procedures.GrimoireOfTheSinsBlackDeathBulletHitsPlayerProcedure;
 import net.mcreator.hantainotengoku.procedures.BlackPlagueBulletHitsLivingEntityProcedure;
 import net.mcreator.hantainotengoku.itemgroup.HantaiNoTengokuItemGroup;
 import net.mcreator.hantainotengoku.HantaiNoTengokuModElements;
@@ -51,7 +52,7 @@ public class GrimoireOfTheSinsBlackDeathItem extends HantaiNoTengokuModElements.
 	@ObjectHolder("hantai_no_tengoku:entitybulletgrimoire_of_the_sins_black_death")
 	public static final EntityType arrow = null;
 	public GrimoireOfTheSinsBlackDeathItem(HantaiNoTengokuModElements instance) {
-		super(instance, 27);
+		super(instance, 28);
 	}
 
 	@Override
@@ -76,11 +77,6 @@ public class GrimoireOfTheSinsBlackDeathItem extends HantaiNoTengokuModElements.
 		}
 
 		@Override
-		public UseAction getUseAction(ItemStack stack) {
-			return UseAction.BOW;
-		}
-
-		@Override
 		public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
 			entity.setActiveHand(hand);
 			return new ActionResult(ActionResultType.SUCCESS, entity.getHeldItem(hand));
@@ -90,6 +86,11 @@ public class GrimoireOfTheSinsBlackDeathItem extends HantaiNoTengokuModElements.
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
 			list.add(new StringTextComponent("Rumored to have been created by the original sins with variants"));
+		}
+
+		@Override
+		public UseAction getUseAction(ItemStack itemstack) {
+			return UseAction.BOW;
 		}
 
 		@Override
@@ -158,11 +159,8 @@ public class GrimoireOfTheSinsBlackDeathItem extends HantaiNoTengokuModElements.
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				BlackPlagueBulletHitsLivingEntityProcedure.executeProcedure($_dependencies);
+				$_dependencies.put("sourceentity", sourceentity);
+				GrimoireOfTheSinsBlackDeathBulletHitsPlayerProcedure.executeProcedure($_dependencies);
 			}
 		}
 
@@ -178,10 +176,7 @@ public class GrimoireOfTheSinsBlackDeathItem extends HantaiNoTengokuModElements.
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
+				$_dependencies.put("sourceentity", sourceentity);
 				BlackPlagueBulletHitsLivingEntityProcedure.executeProcedure($_dependencies);
 			}
 		}
@@ -195,15 +190,6 @@ public class GrimoireOfTheSinsBlackDeathItem extends HantaiNoTengokuModElements.
 			World world = this.world;
 			Entity entity = this.getShooter();
 			if (this.inGround) {
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					BlackPlagueBulletHitsLivingEntityProcedure.executeProcedure($_dependencies);
-				}
 				this.remove();
 			}
 		}

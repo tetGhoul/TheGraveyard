@@ -16,7 +16,7 @@ public class UnpoweredStaffItem extends HantaiNoTengokuModElements.ModElement {
 	@ObjectHolder("hantai_no_tengoku:unpowered_staff")
 	public static final Item block = null;
 	public UnpoweredStaffItem(HantaiNoTengokuModElements instance) {
-		super(instance, 72);
+		super(instance, 18);
 	}
 
 	@Override

@@ -315,11 +315,11 @@ public class TengokuInfuserGUIGui extends HantaiNoTengokuModElements.ModElement 
 
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
-			this.blit(k, l, 0, 0, this.xSize, this.ySize);
+			this.blit(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 		}
 
 		@Override
@@ -338,7 +338,7 @@ public class TengokuInfuserGUIGui extends HantaiNoTengokuModElements.ModElement 
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-			this.font.drawString("Tengoku Infuser", 7, 2, -16777216);
+			this.font.drawString("Tengoku Infuser", 6, 2, -16777216);
 			this.font.drawString("Fuel:" + ((int) new Object() {
 				public double getValue(BlockPos pos, String tag) {
 					TileEntity tileEntity = world.getTileEntity(pos);
@@ -346,7 +346,7 @@ public class TengokuInfuserGUIGui extends HantaiNoTengokuModElements.ModElement 
 						return tileEntity.getTileData().getDouble(tag);
 					return 0;
 				}
-			}.getValue(new BlockPos((int) x, (int) y, (int) z), "FuelRemaining")) + "%", 106, 2, -16777216);
+			}.getValue(new BlockPos((int) x, (int) y, (int) z), "FuelRemaining")) + "%", 105, 2, -16777216);
 		}
 
 		@Override

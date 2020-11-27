@@ -1,11 +1,12 @@
 {
-  "_fv": 10,
+  "_fv": 13,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "book_of_infinite_knowledge",
     "customModelName": "Normal",
     "name": "Book Of Infinite Knowledge",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:HantaiNoTengoku"
     },

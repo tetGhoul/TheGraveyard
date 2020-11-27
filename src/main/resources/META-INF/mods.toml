@@ -18,9 +18,4 @@ authors="tetghoul"
 
 
 
-[[dependencies.hantai_no_tengoku]]
-    modId="geckolib"
-    mandatory=false
-    ordering="NONE"
-    side="BOTH"
 

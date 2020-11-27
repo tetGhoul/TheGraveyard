@@ -51,7 +51,7 @@ public class GrimoireOfTheSinsLightningItem extends HantaiNoTengokuModElements.M
 	@ObjectHolder("hantai_no_tengoku:entitybulletgrimoire_of_the_sins_lightning")
 	public static final EntityType arrow = null;
 	public GrimoireOfTheSinsLightningItem(HantaiNoTengokuModElements instance) {
-		super(instance, 30);
+		super(instance, 31);
 	}
 
 	@Override
@@ -75,11 +75,6 @@ public class GrimoireOfTheSinsLightningItem extends HantaiNoTengokuModElements.M
 		}
 
 		@Override
-		public UseAction getUseAction(ItemStack stack) {
-			return UseAction.BOW;
-		}
-
-		@Override
 		public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
 			entity.setActiveHand(hand);
 			return new ActionResult(ActionResultType.SUCCESS, entity.getHeldItem(hand));
@@ -89,6 +84,11 @@ public class GrimoireOfTheSinsLightningItem extends HantaiNoTengokuModElements.M
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
 			list.add(new StringTextComponent("Rumored to have been created by the original sins with variants"));
+		}
+
+		@Override
+		public UseAction getUseAction(ItemStack itemstack) {
+			return UseAction.BOW;
 		}
 
 		@Override

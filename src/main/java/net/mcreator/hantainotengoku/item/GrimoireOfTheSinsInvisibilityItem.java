@@ -11,6 +11,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.ActionResult;
+import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemUseContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -33,7 +34,7 @@ public class GrimoireOfTheSinsInvisibilityItem extends HantaiNoTengokuModElement
 	@ObjectHolder("hantai_no_tengoku:grimoire_of_the_sins_invisibility")
 	public static final Item block = null;
 	public GrimoireOfTheSinsInvisibilityItem(HantaiNoTengokuModElements instance) {
-		super(instance, 29);
+		super(instance, 30);
 	}
 
 	@Override
@@ -42,7 +43,7 @@ public class GrimoireOfTheSinsInvisibilityItem extends HantaiNoTengokuModElement
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(HantaiNoTengokuItemGroup.tab).maxDamage(16));
+			super(new Item.Properties().group(HantaiNoTengokuItemGroup.tab).maxDamage(16).rarity(Rarity.COMMON));
 			setRegistryName("grimoire_of_the_sins_invisibility");
 		}
 
